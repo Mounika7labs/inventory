@@ -2,7 +2,8 @@
 
 # Install Steps
 
-# clone the repository and run npm install
+clone the repository and run 
+# npm install
 open new terminal and run
 # npm start
 open second terminal and run 
