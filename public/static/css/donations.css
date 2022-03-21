@@ -1,0 +1,114 @@
+.basic-donation {
+  
+    /* height: 52px !important;
+    width: 97% !important;
+    background-color: var(--fiord) !important;
+    border-color: var(--fiord) !important;
+    color: var(--manatee) !important;
+    border-radius: 12px !important;
+    box-shadow: 0px 3px 15px #0000001f !important;
+    font-size: 0.938rem !important;
+    font-style: normal !important;
+    font-weight: 600 !important;
+    opacity: 1 !important;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Almarai' !important;  */
+}
+
+
+.basic-donation  .select__control{
+
+    height: 52px !important;
+    width: 97% !important;
+    background-color: var(--fiord) !important;
+    border-color: var(--fiord) !important;
+    color: var(--manatee) !important;
+    border-radius: 12px !important;
+    box-shadow: 0px 3px 15px #0000001f !important;
+    font-size: 0.938rem !important;
+    font-style: normal !important;
+    font-weight: 600 !important;
+    opacity: 1 !important;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Almarai' !important; 
+}
+
+.doctorfilter-form {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100%;
+}
+
+.doctordata-container{
+    display: flex;
+}
+
+.doctordata-container .form-control {
+    height: 42px !important;
+    width: 212px !important;
+    background-color: transparent !important;
+    border: 1px solid #ced4da;
+    color: var(--manatee) !important;
+    box-shadow: none !important;
+    font-family: 'Almarai' !important;
+    font-size: 0.938rem !important;
+    font-style: normal !important;
+    font-weight: 600 !important;
+    opacity: 1 !important;
+}
+.donation-button {
+    display: block !important;
+    font-size: 0.75rem!important;
+    /* font-family: 'Mada', 'Almarai','Cairo','Reem Kufi' !important; */
+    font-family: 'Almarai' !important;
+    font-style: normal !important;
+    background-color: #2A2E43 !important;
+    height: 38px;
+    text-align: center !important;
+    margin-left: 3px;
+    width: 20%;
+}
+
+.donation-profilecard{
+    border-radius: 12px !important;
+    box-shadow: 0px 4px 16px #455b6314 !important;
+    height: auto !important;
+    width: 93% !important;
+    text-align: right !important;
+    border: none !important;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 55px;
+    background-color: #353A50 !important;
+    color: white;
+    padding: 16px;
+    /* font-family: 'Mada', 'Almarai','Cairo','Reem Kufi' !important; */
+    font-family: 'Almarai' !important;
+}
+
+.adddonation-button{
+    display: block !important;
+    background-color: var(--blueberry) !important;
+    border-color: var(--blueberry) !important;
+    border-radius: 12px !important;
+    width: 97% !important;
+    height: 52px !important;
+    color: var(--white) !important;
+    font-size: 0.938rem !important;
+    font-style: normal !important;
+    font-weight: 600 !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+
+.donation-error{
+    color: var(--manatee);
+    font-size: 0.938rem;
+    text-align: center;
+    margin-top: 10px;
+
+}

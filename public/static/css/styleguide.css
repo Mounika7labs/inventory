@@ -1,0 +1,59 @@
+:root {
+  --baltic-sea: #232530;
+  --black-squeeze: #f1f8f9;
+  --blueberry: #665eff;
+  --blueberry-2: #5773ff;
+  --dodger-blue: #3497fd;
+  --ebony-clay: #2a2e43;
+  --fiord: #454f63;
+  --manatee: #959dad;
+  --scarpa-flow: #555869;
+  --shadow-blue: #78849e;
+  --spindle: #bbd1eb33;
+  --tuna: #2e3649;
+  --turquoise-pearl: #3acce1;
+  --white: #ffffff;
+  --white-2: #ffffff0f;
+
+  --font-size-l: 40px;
+  --font-size-m: 24px;
+  --font-size-s: 20px;
+  --font-size-xl: 52px;
+  --font-size-xs: 15px;
+  --font-size-xxl: 80px;
+  --font-size-xxs: 14px;
+  --font-size-xxxl: 180px;
+  --font-size-xxxs: 13px;
+  --font-size-xxxxs: 12px;
+
+  --font-family-gibson: "Gibson", Helvetica;
+  --font-family-gibson-regular: "Gibson-Regular", Helvetica;
+  --font-family-gibson-semibold: "Gibson-SemiBold", Helvetica;
+}.gibson-semi-bold-white-15px {
+  color: var(--white);
+  font-family: var(--font-family-gibson-semibold);
+  font-size: var(--font-size-xs);
+  font-style: normal;
+  font-weight: 600;
+}
+.gibson-semi-bold-white-12px {
+  color: var(--white);
+  font-family: var(--font-family-gibson-semibold);
+  font-size: var(--font-size-xxxxs);
+  font-style: normal;
+  font-weight: 600;
+}
+.gibson-semi-bold-manatee-15px {
+  color: var(--manatee);
+  font-family: var(--font-family-gibson-semibold);
+  font-size: var(--font-size-xs);
+  font-style: normal;
+  font-weight: 600;
+}
+.gibson-semi-bold-fiord-16px {
+  color: var(--fiord);
+  font-family: var(--font-family-gibson-semibold);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+}

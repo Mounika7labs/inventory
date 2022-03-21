@@ -1,0 +1,352 @@
+/* screen - welcome */
+
+.welcome {
+  background-color: var(--tuna);
+  height: 812px;
+  overflow: hidden;
+  overflow-x: hidden;
+  position: relative;
+  width: 375px;
+}
+.welcome .asset-6-ge8Agk {
+  background-color: transparent;
+  border-radius: 35px;
+  height: calc(100.00% - 33px);
+  left: 23px;
+  object-fit: cover;
+  position: absolute;
+  top: 13px;
+  width: calc(100.00% - 43px);
+}
+.welcome .background-EZQQ1p {
+  background-color: transparent;
+  height: 100%;
+  left: 0px;
+  object-fit: cover;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+}
+.welcome .bars-time-black-Lm3wCU {
+  background-color: transparent;
+  height: 100%;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 54px;
+}
+.welcome .battery-Lm3wCU {
+  background-color: transparent;
+  height: calc(100.00% - 5px);
+  position: absolute;
+  right: 0px;
+  top: 2px;
+  width: 24px;
+}
+.welcome .bg-230BF3 {
+  background-color: transparent;
+  height: 100%;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+}
+.welcome .bg-YlnSTB {
+  background-color: var(--blueberry);
+  border-radius: 12px;
+  height: 100%;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+}
+.welcome .bg-ge8Agk {
+  background-color: var(--tuna);
+  border-radius: 12px;
+  height: 100%;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+}
+.welcome .border-kY5E5r {
+  background-color: transparent;
+  height: 100%;
+  left: 0px;
+  object-fit: cover;
+  position: absolute;
+  top: 0px;
+  width: calc(100.00% - 2px);
+}
+.welcome .bottom-C61RwL {
+  background-color: transparent;
+  height: 24px;
+  left: 0px;
+  position: absolute;
+  top: 788px;
+  width: 375px;
+}
+.welcome .buttonssmallpurple-xUsx1L {
+  background-color: transparent;
+  bottom: 0px;
+  height: 44px;
+  left: calc(49.80% - 40px);
+  position: absolute;
+  width: 80px;
+}
+.welcome .cap-kY5E5r {
+  background-color: transparent;
+  height: 4px;
+  object-fit: cover;
+  position: absolute;
+  right: 0px;
+  top: calc(50.00% - 2px);
+  width: 1px;
+}
+.welcome .capacity-kY5E5r {
+  background-color: transparent;
+  height: 7px;
+  left: 2px;
+  object-fit: cover;
+  position: absolute;
+  top: calc(50.00% - 4px);
+  width: 18px;
+}
+.welcome .cellular-connection-D1f00s {
+  background-color: transparent;
+  height: 100%;
+  left: 0px;
+  object-fit: cover;
+  position: absolute;
+  top: 1px;
+  width: 100%;
+}
+.welcome .cellular-connection-Lm3wCU {
+  background-color: transparent;
+  height: 11px;
+  position: absolute;
+  right: 50px;
+  top: calc(50.00% - 5px);
+  width: 17px;
+}
+.welcome .component-106-5-C61RwL {
+  background-color: transparent;
+  height: 150px;
+  left: 96px;
+  position: absolute;
+  top: 282px;
+  width: 184px;
+}
+.welcome .content-C61RwL {
+  background-color: transparent;
+  height: 224px;
+  left: 24px;
+  position: absolute;
+  top: 548px;
+  width: 327px;
+}
+.welcome .dot-K4vLTJ {
+  background-color: var(--spindle);
+  border-radius: 13px;
+  height: 8px;
+  left: 0px;
+  position: relative;
+  top: 0px;
+  width: 8px;
+}
+.welcome .dot-RURjv5 {
+  background-color: var(--spindle);
+  border-radius: 13px;
+  height: 8px;
+  left: 0px;
+  position: relative;
+  top: 0px;
+  width: 8px;
+}
+.welcome .dot-h029Rs {
+  background-color: var(--spindle);
+  border-radius: 13px;
+  height: 8px;
+  left: 0px;
+  position: relative;
+  top: 0px;
+  width: 8px;
+}
+.welcome .dot-sSXmyL {
+  background-color: var(--white);
+  border-radius: 23px;
+  height: 100%;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 8px;
+}
+.welcome .home-indicatorlight-7YEL5c {
+  background-color: transparent;
+  height: 100%;
+  left: 0px;
+  position: relative;
+  top: 0px;
+  width: 100%;
+}
+.welcome .if-youre-offere-eat-just-get-on-gtySrw {
+  background-color: transparent;
+  bottom: 3px;
+  color: var(--shadow-blue);
+  /* font-family: 'Mada', 'Almarai','Cairo','Reem Kufi' !important; */
+  font-family: 'Almarai' !important;
+
+  font-size: var(--font-size-xxs);
+  font-style: normal;
+  font-weight: 400;
+  height: 53px;
+  left: 0px;
+  letter-spacing: 0.00px;
+  line-height: 24px;
+  position: absolute;
+  text-align: center;
+  width: calc(100.00% + 2px);
+  margin-bottom: 0px !important;
+}
+.welcome .indicator-230BF3 {
+  background-color: var(--scarpa-flow);
+  border-radius: 1px;
+  bottom: calc(42.86% - 1px);
+  height: 3px;
+  opacity: 0.5;
+  position: absolute;
+  right: calc(49.79% - 67px);
+  width: 134px;
+}
+.welcome .next-YlnSTB {
+  background-color: transparent;
+  bottom: calc(44.83% - 7px);
+  color: var(--white);
+  font-family: var(--font-family-gibson-semibold);
+  font-size: var(--font-size-xxxs);
+  font-style: normal;
+  font-weight: 600;
+  height: 15px;
+  letter-spacing: 0.00px;
+  line-height: 13px;
+  position: absolute;
+  right: calc(47.83% - 16px);
+  text-align: center;
+  white-space: nowrap;
+  width: 34px;
+}
+.welcome .paginationlight-xUsx1L {
+  background-color: transparent;
+  height: 8px;
+  position: absolute;
+  right: calc(49.82% - 28px);
+  top: 0px;
+  width: 56px;
+}
+.welcome .repeat-grid-sSXmyL {
+  background-color: transparent;
+  height: 8px;
+  position: absolute;
+  right: 0px;
+  top: calc(50.00% - 4px);
+  width: 40px;
+}
+.welcome .status-barlight-7AdSuJ {
+  background-color: transparent;
+  height: 100%;
+  left: 0px;
+  position: relative;
+  top: 0px;
+  width: 100%;
+}
+.welcome .status-barlight-PixuWe {
+  background-color: transparent;
+  height: 100%;
+  left: 0px;
+  position: relative;
+  top: 0px;
+  width: 100%;
+}
+.welcome .text-xUsx1L {
+  background-color: transparent;
+  height: 111px;
+  left: 0px;
+  position: absolute;
+  top: calc(49.56% - 55px);
+  width: 100%;
+}
+.welcome .time-EZQQ1p {
+  background-color: transparent;
+  bottom: 1px;
+  height: 10px;
+  left: 13px;
+  object-fit: cover;
+  position: absolute;
+  width: calc(100.00% - 27px);
+}
+.welcome .top-C61RwL {
+  background-color: transparent;
+  height: 16px;
+  left: 20px;
+  position: absolute;
+  top: 15px;
+  width: 340px;
+}
+.welcome .welcome-gtySrw {
+  background-color: transparent;
+  color: var(--fiord);
+  font-family: var(--font-family-gibson-semibold);
+  font-size: var(--font-size-l);
+  font-style: normal;
+  font-weight: 600;
+  height: 46px;
+  left: 32px;
+  letter-spacing: 0.00px;
+  line-height: 55px;
+  position: absolute;
+  text-align: center;
+  top: -8px;
+  white-space: nowrap;
+  width: calc(100.00% - 64px);
+}
+.welcome .wifi-Lm3wCU {
+  background-color: transparent;
+  height: 11px;
+  position: absolute;
+  right: 29px;
+  top: 2px;
+  width: 15px;
+}
+.welcome .wifi-bdExeS {
+  background-color: transparent;
+  height: 100%;
+  left: 0px;
+  object-fit: cover;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+}
+.welcome .x02-Z2xnye {
+  background-color: transparent;
+  height: 8px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 8px;
+}
+.welcome .x12-Z2xnye {
+  background-color: transparent;
+  height: 8px;
+  left: 16px;
+  position: absolute;
+  top: 0px;
+  width: 8px;
+}
+.welcome .x22-Z2xnye {
+  background-color: transparent;
+  height: 8px;
+  left: 32px;
+  position: absolute;
+  top: 0px;
+  width: 8px;
+}

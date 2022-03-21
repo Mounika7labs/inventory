@@ -1,0 +1,1774 @@
+/* screen - cards */
+
+.cards {
+  background-color: var(--iron);
+  /* height: 2160px; */
+  height: 203px;
+  overflow: hidden;
+  overflow-x: hidden;
+  position: relative;
+  width: 375px;
+}
+.cards .adrien-stone-fvZHk1 {
+  background-color: transparent;
+  height: 18px;
+  left: 0px;
+  letter-spacing: 0.00px;
+  line-height: 16px;
+  position: absolute;
+  text-align: left;
+  /* top: 16px; */
+  top:0px;
+  white-space: nowrap;
+  width: 97px;
+}
+.cards .author-7PE8rt {
+  background-color: transparent;
+  height: 37px;
+  left: 0px;
+  position: absolute;
+  top: 7px;
+  width: 156px;
+}
+.cards .author-DN0TTU {
+  background-color: transparent;
+  height: calc(100.00% - 6px);
+  left: 0px;
+  position: absolute;
+  top: 6px;
+  width: 123px;
+}
+.cards .avatar-AvW2ES {
+  background-color: transparent;
+  border-radius: 12px;
+  height: calc(100.00% - 1px);
+  left: 0px;
+  object-fit: cover;
+  position: absolute;
+  top: 1px;
+  width: 36px;
+}
+.cards .avatar-GQpxv1 {
+  background-color: transparent;
+  border-radius: 12px;
+  height: calc(100.00% - 2px);
+  left: 0px;
+  object-fit: cover;
+  position: absolute;
+  top: 2px;
+  width: 36px;
+}
+.cards .avatar-black-UZe9xm {
+  background-color: transparent;
+  height: 44px;
+  left: 24px;
+  position: absolute;
+  top: 16px;
+  width: calc(100.00% - 40px);
+}
+.cards .avatar-lOahEh {
+  background-color: transparent;
+  border-radius: 12px;
+  height: calc(100.00% - 1px);
+  left: 0px;
+  object-fit: cover;
+  position: absolute;
+  top: 1px;
+  width: 36px;
+}
+.cards .believe-you-can-e-halfway-there-7PE8rt {
+  background-color: transparent;
+  color: var(--shadow-blue);
+  /* font-family: 'Mada', 'Almarai','Cairo','Reem Kufi' !important; */
+  font-family: 'Almarai' !important;
+
+  font-size: var(--font-size-xl);
+  font-style: normal;
+  font-weight: 400;
+  height: 16px;
+  left: 0px;
+  letter-spacing: 0.00px;
+  line-height: 22px;
+  position: absolute;
+  text-align: left;
+  top: calc(27.27% - 4px);
+  white-space: nowrap;
+  width: 248px;
+}
+.cards .bernard-nolan-HiKef3 {
+  background-color: transparent;
+  height: 18px;
+  left: 0px;
+  letter-spacing: 0.00px;
+  line-height: 16px;
+  position: absolute;
+  text-align: left;
+  top: 16px;
+  white-space: nowrap;
+  width: 108px;
+}
+.cards .bg-5U7Sex {
+  background-color: var(--white);
+  border-radius: 12px;
+  box-shadow: 0px 4px 16px #455b6314;
+  height: 100%;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+}
+.cards .bg-EIx8Fs {
+  background-color: transparent;
+  height: 100%;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+}
+.cards .bg-JKrP8i {
+  background-color: transparent;
+  height: 100%;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+}
+.cards .bg-KrkUCA {
+  background-color: var(--white);
+  border-radius: 12px;
+  box-shadow: 0px 4px 16px #455b6314;
+  height: 100%;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+}
+.cards .bg-MOtljq {
+  background-color: transparent;
+  height: 100%;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+}
+.cards .bg-NcUzCx {
+  background-color: var(--white);
+  border-radius: 12px;
+  box-shadow: 0px 4px 16px #455b6314;
+  height: 100%;
+  left: 32px;
+  position: absolute;
+  top: 0px;
+  width: calc(100.00% - 32px);
+}
+.cards .bg-S7Ic4x {
+  background-color: transparent;
+  height: 100%;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+}
+.cards .bg-U3duVN {
+  background-color: transparent;
+  height: 100%;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+}
+.cards .bg-bSYj7r {
+  background-color: transparent;
+  height: 100%;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+}
+.cards .bg-eOUSUi {
+  background-color: transparent;
+  height: 100%;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+}
+.cards .bg-fZaZom {
+  background-color: var(--white);
+  border-radius: 12px;
+  box-shadow: 0px 4px 16px #455b6314;
+  height: 100%;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+}
+.cards .bg-jFBaEs {
+  background-color: var(--white);
+  border-radius: 12px;
+  box-shadow: 0px 4px 16px #455b6314;
+  height: 100%;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: calc(100.00% - 31px);
+}
+.cards .bg-o4pj3p {
+  background-color: transparent;
+  height: 100%;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+}
+.cards .bg-r8xiPP {
+  background-color: transparent;
+  height: 100%;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+}
+.cards .bg-vzq3NN {
+  background-color: var(--white);
+  border-radius: 12px;
+  box-shadow: 0px 4px 16px #455b631a;
+  height: 100%;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+}
+.cards .bg-xxrdP8 {
+  background-color: transparent;
+  height: 100%;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+}
+.cards .bg-yIUShw {
+  background-color: transparent;
+  height: 100%;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+}
+.cards .biking-N6tthi {
+  background-color: transparent;
+  height: calc(100.00% + 1px);
+  left: 26px;
+  letter-spacing: 0.00px;
+  line-height: 16px;
+  position: absolute;
+  text-align: left;
+  top: 0px;
+  white-space: nowrap;
+  width: 49px;
+}
+.cards .card-5G4Rxj {
+  background-color: transparent;
+  height: 182px;
+  left: 0px;
+  position: absolute;
+  top: calc(19.15% - 35px);
+  width: 100%;
+}
+.cards .card-6bxaRy {
+  background-color: transparent;
+  height: calc(100.00% - 96px);
+  left: 8px;
+  position: absolute;
+  top: 96px;
+  width: calc(100.00% - 16px);
+}
+.cards .card-LhTvnO {
+  background-color: transparent;
+  height: 242px;
+  left: 0px;
+  position: absolute;
+  top: calc(47.06% - 114px);
+  width: 100%;
+}
+.cards .card-MpEUx4 {
+  background-color: transparent;
+  bottom: 0px;
+  height: 144px;
+  left: 8px;
+  position: absolute;
+  width: calc(100.00% - 17px);
+}
+.cards .card-doMd3x {
+  background-color: transparent;
+  /* bottom: 168px; */
+  height: 144px;
+  left: 8px;
+  position: absolute;
+  width: calc(100.00% - 16px);
+}
+.cards .card-u2rv7T {
+  background-color: transparent;
+  bottom: calc(20.56% - 58px);
+  height: 284px;
+  left: 0px;
+  position: absolute;
+  width: 100%;
+}
+.cards .cardbuttons-u2rv7T {
+  background-color: transparent;
+  bottom: calc(37.91% - 82px);
+  height: 216px;
+  left: 0px;
+  position: absolute;
+  width: 100%;
+}
+.cards .cards-C61RwL {
+  background-color: transparent;
+  /* height: 1957px; */
+  left: 16px;
+  position: relative;
+  top: 25px;
+  width: 343px;
+}
+.cards .cards-u2rv7T {
+  background-color: transparent;
+  height: 14px;
+  left: 8px;
+  letter-spacing: 0.00px;
+  line-height: 12px;
+  position: absolute;
+  text-align: left;
+  top: 0px;
+  white-space: nowrap;
+  width: 40px;
+}
+.cards .chat-KrkUCA {
+  background-color: transparent;
+  height: 15px;
+  left: calc(16.83% - 5px);
+  letter-spacing: 0.00px;
+  line-height: 44px;
+  position: absolute;
+  text-align: center;
+  top: calc(25.12% - 4px);
+  white-space: nowrap;
+  width: 28px;
+}
+.cards .content-AiqFpB {
+  background-color: transparent;
+  height: calc(100.00% - 28px);
+  left: 24px;
+  position: absolute;
+  top: 16px;
+  width: calc(100.00% - 40px);
+}
+.cards .content-NcUzCx {
+  background-color: transparent;
+  height: calc(100.00% - 40px);
+  position: absolute;
+  right: 24px;
+  top: 24px;
+  width: 166px;
+}
+.cards .content-UZe9xm {
+  background-color: transparent;
+  bottom: 9px;
+  height: 133px;
+  left: 24px;
+  position: absolute;
+  width: calc(100.00% - 48px);
+}
+.cards .content-jFBaEs {
+  background-color: transparent;
+  height: calc(100.00% - 40px);
+  left: 24px;
+  position: absolute;
+  top: 24px;
+  width: 166px;
+}
+.cards .divider-2eyqWY {
+  background-color: transparent;
+  bottom: 25.31%;
+  height: 1px;
+  left: 24px;
+  position: absolute;
+  width: calc(100.00% - 48px);
+}
+.cards .divider-5U7Sex {
+  background-color: transparent;
+  height: 1px;
+  left: 24px;
+  position: absolute;
+  top: 34.25%;
+  width: calc(100.00% - 48px);
+}
+.cards .divider-Gmx0xT {
+  background-color: var(--white);
+  border-radius: 1px;
+  bottom: 25.00%;
+  height: 1px;
+  left: 0px;
+  opacity: 0.05;
+  position: absolute;
+  width: calc(100.00% - 2px);
+}
+.cards .divider-K4G3Qk {
+  background-color: transparent;
+  bottom: 33.15%;
+  height: 1px;
+  left: 24px;
+  position: absolute;
+  width: calc(100.00% - 48px);
+}
+.cards .divider-KrkUCA {
+  background-color: #f4f4f6fd;
+  border-radius: 1px;
+  bottom: 49.77%;
+  height: 1px;
+  left: 24px;
+  position: absolute;
+  width: calc(100.00% - 48px);
+}
+.cards .divider-NKoV2e {
+  background-color: transparent;
+  bottom: 49.79%;
+  height: 1px;
+  left: 24px;
+  position: absolute;
+  width: calc(100.00% - 48px);
+}
+.cards .divider-cxeRyL {
+  background-color: var(--wild-sand);
+  border-radius: 1px;
+  height: 100%;
+  left: 0px;
+  position: relative;
+  top: 0px;
+  width: 100%;
+}
+.cards .divider-fZaZom {
+  background-color: #f4f4f6fd;
+  border-radius: 1px;
+  bottom: 23.53%;
+  height: 1px;
+  left: 24px;
+  position: absolute;
+  width: calc(100.00% - 48px);
+}
+.cards .divider-jZY28f {
+  background-color: var(--wild-sand);
+  border-radius: 1px;
+  height: 100%;
+  left: 0px;
+  position: relative;
+  top: 0px;
+  width: 100%;
+}
+.cards .divider-pAI4Hk {
+  background-color: var(--wild-sand);
+  border-radius: 1px;
+  height: 100%;
+  left: 0px;
+  position: relative;
+  top: 0px;
+  width: 100%;
+}
+.cards .divider-vzq3NN {
+  background-color: transparent;
+  height: 1px;
+  left: 24px;
+  position: absolute;
+  top: 25.73%;
+  width: calc(100.00% - 48px);
+}
+.cards .divider-xOJUsK {
+  background-color: var(--wild-sand);
+  border-radius: 1px;
+  height: 100%;
+  left: 0px;
+  position: relative;
+  top: 0px;
+  width: 100%;
+}
+.cards .divider-xapuyG {
+  background-color: var(--wild-sand);
+  border-radius: 1px;
+  height: 100%;
+  left: 0px;
+  position: relative;
+  top: 0px;
+  width: 100%;
+}
+.cards .docks-KrkUCA {
+  background-color: transparent;
+  height: 15px;
+  letter-spacing: 0.00px;
+  line-height: 44px;
+  position: absolute;
+  right: calc(49.51% - 18px);
+  text-align: center;
+  top: calc(25.12% - 4px);
+  white-space: nowrap;
+  width: 36px;
+}
+.cards .dot-3p7ado {
+  background-color: var(--fuchsia-pink);
+  border-radius: 3px;
+  height: 10px;
+  left: 0px;
+  position: relative;
+  top: 0px;
+  width: 10px;
+}
+.cards .dot-9PFXvI {
+  background-color: var(--blueberry);
+  border-radius: 3px;
+  height: 10px;
+  left: 0px;
+  position: relative;
+  top: 0px;
+  width: 10px;
+}
+.cards .dot-9y5Whn {
+  background-color: var(--blueberry);
+  border-radius: 3px;
+  height: 100%;
+  opacity: 0.2;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 10px;
+}
+.cards .dot-F9xMLI {
+  background-color: var(--fuchsia-pink);
+  border-radius: 3px;
+  height: 10px;
+  left: 0px;
+  opacity: 0.2;
+  position: relative;
+  top: 0px;
+  width: 10px;
+}
+.cards .dot-GKURtz {
+  background-color: var(--violet-red);
+  border-radius: 3px;
+  height: 10px;
+  left: 0px;
+  position: relative;
+  top: 0px;
+  width: 10px;
+}
+.cards .dot-N6tthi {
+  background-color: var(--turquoise-pearl);
+  border-radius: 3px;
+  height: 10px;
+  left: 0px;
+  position: absolute;
+  top: calc(42.86% - 4px);
+  width: 10px;
+}
+.cards .dot-PwcYvS {
+  background-color: var(--fuchsia-pink);
+  border-radius: 3px;
+  height: 10px;
+  left: 0px;
+  opacity: 0.2;
+  position: relative;
+  top: 0px;
+  width: 10px;
+}
+.cards .dot-Q8y3rw {
+  background-color: var(--blueberry);
+  border-radius: 3px;
+  height: 10px;
+  left: 0px;
+  position: relative;
+  top: 0px;
+  width: 10px;
+}
+.cards .dot-SN8cJk {
+  background-color: var(--turquoise-pearl);
+  border-radius: 3px;
+  height: 100%;
+  opacity: 0.2;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 10px;
+}
+.cards .dot-Y8O0e3 {
+  background-color: var(--fuchsia-pink);
+  border-radius: 3px;
+  height: 10px;
+  left: 0px;
+  opacity: 0.2;
+  position: relative;
+  top: 0px;
+  width: 10px;
+}
+.cards .dot-aspnxu {
+  background-color: var(--fuchsia-pink);
+  border-radius: 3px;
+  height: 10px;
+  left: 0px;
+  position: relative;
+  top: 0px;
+  width: 10px;
+}
+.cards .dot-bezP9W {
+  background-color: var(--dodger-blue);
+  border-radius: 3px;
+  height: 10px;
+  left: 0px;
+  position: absolute;
+  top: calc(42.86% - 4px);
+  width: 10px;
+}
+.cards .dot-caZ9Dr {
+  background-color: var(--blueberry);
+  border-radius: 3px;
+  height: 10px;
+  left: 0px;
+  position: relative;
+  top: 0px;
+  width: 10px;
+}
+.cards .dot-dwiJ5A {
+  background-color: var(--turquoise-pearl);
+  border-radius: 3px;
+  height: 10px;
+  left: 0px;
+  position: relative;
+  top: 0px;
+  width: 10px;
+}
+.cards .dot-fZntRy {
+  background-color: var(--blueberry);
+  border-radius: 3px;
+  height: 10px;
+  left: 0px;
+  position: relative;
+  top: 0px;
+  width: 10px;
+}
+.cards .dot-gnKC6C {
+  background-color: var(--turquoise-pearl);
+  border-radius: 3px;
+  height: 10px;
+  left: 0px;
+  position: relative;
+  top: 0px;
+  width: 10px;
+}
+.cards .dot-kTQiKZ {
+  background-color: var(--violet-red);
+  border-radius: 3px;
+  height: 10px;
+  left: 0px;
+  position: relative;
+  top: 0px;
+  width: 10px;
+}
+.cards .dot-lVY9nu {
+  background-color: var(--violet-red);
+  border-radius: 3px;
+  height: 10px;
+  left: 0px;
+  position: relative;
+  top: 0px;
+  width: 10px;
+}
+.cards .dot-qgQmbW {
+  background-color: var(--blueberry-2);
+  border-radius: 3px;
+  height: 10px;
+  left: 0px;
+  position: absolute;
+  top: calc(42.86% - 4px);
+  width: 10px;
+}
+.cards .dot-s4kYOe {
+  background-color: var(--violet-red);
+  border-radius: 3px;
+  height: 10px;
+  left: 0px;
+  position: relative;
+  top: 0px;
+  width: 10px;
+}
+.cards .dot-wpREB9 {
+  background-color: var(--turquoise-pearl);
+  border-radius: 3px;
+  height: 10px;
+  left: 0px;
+  position: relative;
+  top: 0px;
+  width: 10px;
+}
+.cards .dot-x0C4MF {
+  background-color: var(--violet-red);
+  border-radius: 3px;
+  height: 100%;
+  opacity: 0.2;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 10px;
+}
+.cards .dot-yRYQ4d {
+  background-color: var(--turquoise-pearl);
+  border-radius: 3px;
+  height: 10px;
+  left: 0px;
+  position: relative;
+  top: 0px;
+  width: 10px;
+}
+.cards .driving-qgQmbW {
+  background-color: transparent;
+  height: calc(100.00% + 1px);
+  left: 26px;
+  letter-spacing: 0.00px;
+  line-height: 16px;
+  position: absolute;
+  text-align: left;
+  top: 0px;
+  white-space: nowrap;
+  width: 56px;
+}
+.cards .field-2eyqWY {
+  background-color: transparent;
+  bottom: calc(37.07% - 4px);
+  height: 10px;
+  left: 253px;
+  position: absolute;
+  width: calc(100.00% - 277px);
+}
+.cards .field-5U7Sex {
+  background-color: transparent;
+  height: 17px;
+  left: 24px;
+  position: absolute;
+  top: 26px;
+  width: calc(100.00% - 48px);
+}
+.cards .field-CptGgO {
+  background-color: transparent;
+  bottom: 21px;
+  height: 17px;
+  left: 24px;
+  position: absolute;
+  width: calc(100.00% - 48px);
+}
+.cards .field-K4G3Qk {
+  background-color: transparent;
+  bottom: calc(48.48% - 8px);
+  height: 17px;
+  left: 24px;
+  position: absolute;
+  width: calc(100.00% - 48px);
+}
+.cards .field-NKoV2e {
+  background-color: transparent;
+  height: 10px;
+  left: 253px;
+  position: absolute;
+  top: calc(37.50% - 4px);
+  width: calc(100.00% - 275px);
+}
+.cards .field-uxF6vj {
+  background-color: transparent;
+  bottom: 23px;
+  height: 16px;
+  left: 24px;
+  position: absolute;
+  width: calc(100.00% - 48px);
+}
+.cards .field-vzq3NN {
+  background-color: transparent;
+  height: 10px;
+  left: 253px;
+  position: absolute;
+  top: 28px;
+  width: calc(100.00% - 277px);
+}
+.cards .form-AiqFpB {
+  background-color: var(--white);
+  border-radius: 12px;
+  box-shadow: 0px 4px 16px #455b6314;
+  height: 100%;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+}
+.cards .form-UZe9xm {
+  background-color: transparent;
+  height: calc(100.00% + 48px);
+  left: -24px;
+  object-fit: cover;
+  position: absolute;
+  top: -20px;
+  width: calc(100.00% + 48px);
+}
+.cards .friends-KrkUCA {
+  background-color: transparent;
+  bottom: 40px;
+  height: 15px;
+  left: 46px;
+  letter-spacing: 0.00px;
+  line-height: 44px;
+  position: absolute;
+  text-align: center;
+  white-space: nowrap;
+  width: 42px;
+}
+.cards .icons-7PE8rt {
+  background-color: transparent;
+  bottom: 0px;
+  height: 24px;
+  left: 0px;
+  position: absolute;
+  width: calc(100.00% - 8px);
+}
+.cards .icons-Gmx0xT {
+  background-color: transparent;
+  bottom: 0px;
+  height: 25px;
+  left: 0px;
+  position: absolute;
+  width: calc(100.00% - 2px);
+}
+.cards .icons-fZaZom {
+  background-color: transparent;
+  bottom: calc(7.32% - 2px);
+  height: 24px;
+  left: 24px;
+  position: absolute;
+  width: calc(100.00% - 48px);
+}
+.cards .iconschevron-7PE8rt {
+  background-color: transparent;
+  height: 24px;
+  opacity: 0.56;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 24px;
+}
+.cards .iconschevron-light-DN0TTU {
+  background-color: transparent;
+  height: 24px;
+  opacity: 0.31;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 24px;
+}
+.cards .iconscomment-KksInB {
+  background-color: transparent;
+  height: 100%;
+  position: absolute;
+  right: calc(25.09% - 6px);
+  top: 0px;
+  width: 24px;
+}
+.cards .iconscomment-Qsx8To {
+  background-color: transparent;
+  height: 100%;
+  position: absolute;
+  right: calc(26.67% - 6px);
+  top: 0px;
+  width: 24px;
+}
+.cards .iconscomment-dark-1x4bA8 {
+  background-color: transparent;
+  height: calc(100.00% - 1px);
+  position: absolute;
+  right: calc(25.09% - 6px);
+  top: 0px;
+  width: 24px;
+}
+.cards .iconslike-KksInB {
+  background-color: transparent;
+  height: 100%;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 24px;
+}
+.cards .iconslike-Qsx8To {
+  background-color: transparent;
+  height: 100%;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 24px;
+}
+.cards .iconslike-dark-1x4bA8 {
+  background-color: transparent;
+  height: calc(100.00% - 1px);
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 24px;
+}
+.cards .iconsshare-KksInB {
+  background-color: transparent;
+  height: 100%;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 24px;
+}
+.cards .iconsshare-Qsx8To {
+  background-color: transparent;
+  height: 100%;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 24px;
+}
+.cards .iconsshare-dark-1x4bA8 {
+  background-color: transparent;
+  height: calc(100.00% - 1px);
+  left: 0px;
+  position: absolute;
+  top: 1px;
+  width: 24px;
+}
+.cards .if-youre-offere-eat-just-get-on-fvZHk1 {
+  background-color: transparent;
+  /* bottom: 2px; */
+  bottom: 15px;
+  color: var(--shadow-blue);
+  /* font-family: 'Mada', 'Almarai','Cairo','Reem Kufi' !important; */
+  font-family: 'Almarai' !important;
+
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  height: 62px;
+  left: 0px;
+  letter-spacing: 0.00px;
+  line-height: 20px;
+  position: absolute;
+  text-align: left;
+  width: calc(100.00% + 2px);
+  margin-bottom: 0px !important;
+}
+.cards .img-6bxaRy {
+  background-color: transparent;
+  border-radius: 12px;
+  height: 205px;
+  left: -22px;
+  object-fit: cover;
+  position: absolute;
+  top: -20px;
+  width: calc(100.00% + 45px);
+}
+.cards .jean-coutu-GQpxv1 {
+  background-color: transparent;
+  color: var(--white);
+  /* font-family: 'Mada', 'Almarai','Cairo','Reem Kufi' !important; */
+  font-family: 'Almarai' !important;
+
+  font-size: var(--font-size-xxxl);
+  font-style: normal;
+  font-weight: 600;
+  height: 18px;
+  letter-spacing: 0.00px;
+  line-height: 16px;
+  position: absolute;
+  right: -3px;
+  text-align: left;
+  top: 4px;
+  white-space: nowrap;
+  width: 82px;
+}
+.cards .jerome-gaveau-lOahEh {
+  background-color: transparent;
+  height: 18px;
+  letter-spacing: 0.00px;
+  line-height: 16px;
+  position: absolute;
+  right: -6px;
+  text-align: left;
+  top: 4px;
+  white-space: nowrap;
+  width: 115px;
+}
+.cards .line-EIx8Fs {
+  background-color: var(--shadow-blue);
+  border-radius: 20px;
+  height: 2px;
+  left: calc(40.84% - 3px);
+  position: absolute;
+  top: calc(50.00% - 1px);
+  transform: rotate(45.00deg);
+  width: 8px;
+}
+.cards .line-TnODcE {
+  background-color: var(--gray-suit);
+  border-radius: 20px;
+  bottom: calc(50.00% - 1px);
+  height: 2px;
+  position: absolute;
+  right: calc(32.28% - 3px);
+  transform: rotate(-45.00deg);
+  width: 8px;
+}
+.cards .line-eOUSUi {
+  background-color: var(--gray-suit);
+  border-radius: 20px;
+  height: 2px;
+  left: calc(40.84% - 3px);
+  position: absolute;
+  top: calc(50.00% - 1px);
+  transform: rotate(45.00deg);
+  width: 8px;
+}
+.cards .line-mdRHxK {
+  background-color: var(--shadow-blue);
+  border-radius: 20px;
+  height: 2px;
+  position: absolute;
+  right: calc(32.28% - 3px);
+  top: calc(50.00% - 1px);
+  transform: rotate(-45.00deg);
+  width: 8px;
+}
+.cards .location-KrkUCA {
+  background-color: transparent;
+  height: 15px;
+  letter-spacing: 0.00px;
+  line-height: 44px;
+  position: absolute;
+  right: 40px;
+  text-align: center;
+  top: calc(25.12% - 4px);
+  white-space: nowrap;
+  width: 50px;
+}
+.cards .marie-nathalie-AvW2ES {
+  background-color: transparent;
+  height: 18px;
+  letter-spacing: 0.00px;
+  line-height: 16px;
+  position: absolute;
+  right: -6px;
+  text-align: left;
+  top: 4px;
+  white-space: nowrap;
+  width: 110px;
+}
+.cards .name-fZaZom {
+  background-color: transparent;
+  height: 37px;
+  left: 21px;
+  position: absolute;
+  top: calc(13.25% - 5px);
+  width: 152px;
+}
+.cards .notifications-KrkUCA {
+  background-color: transparent;
+  bottom: 40px;
+  height: 15px;
+  letter-spacing: 0.00px;
+  line-height: 44px;
+  position: absolute;
+  right: 29px;
+  text-align: center;
+  white-space: nowrap;
+  width: 72px;
+}
+.cards .path-CAm2dU {
+  background-color: transparent;
+  bottom: calc(28.35% - 6px);
+  height: 22px;
+  object-fit: cover;
+  position: absolute;
+  right: calc(17.14% - 4px);
+  width: 22px;
+}
+.cards .path-JKrP8i {
+  background-color: transparent;
+  height: calc(100.00% - 8px);
+  left: 3px;
+  object-fit: cover;
+  position: absolute;
+  top: 4px;
+  width: calc(100.00% - 6px);
+}
+.cards .path-KrkUCA {
+  background-color: transparent;
+  height: 21px;
+  left: calc(17.13% - 4px);
+  object-fit: cover;
+  position: absolute;
+  top: 30px;
+  width: 22px;
+}
+.cards .path-MOtljq {
+  background-color: transparent;
+  height: calc(100.00% - 6px);
+  left: 3px;
+  object-fit: cover;
+  position: absolute;
+  top: 3px;
+  width: calc(100.00% - 6px);
+}
+.cards .path-S7Ic4x {
+  background-color: transparent;
+  height: calc(100.00% - 6px);
+  left: 3px;
+  object-fit: cover;
+  position: absolute;
+  top: 3px;
+  width: calc(100.00% - 6px);
+}
+.cards .path-U3duVN {
+  background-color: transparent;
+  height: calc(100.00% - 6px);
+  left: 3px;
+  object-fit: cover;
+  position: absolute;
+  top: 3px;
+  width: calc(100.00% - 6px);
+}
+.cards .path-WrtzFI {
+  background-color: transparent;
+  bottom: calc(28.57% - 6px);
+  height: 20px;
+  object-fit: cover;
+  position: absolute;
+  right: calc(49.85% - 10px);
+  width: 20px;
+}
+.cards .path-bSYj7r {
+  background-color: transparent;
+  height: calc(100.00% - 6px);
+  left: 5px;
+  object-fit: cover;
+  position: absolute;
+  top: 3px;
+  width: calc(100.00% - 9px);
+}
+.cards .path-o4pj3p {
+  background-color: transparent;
+  height: calc(100.00% - 6px);
+  left: 5px;
+  object-fit: cover;
+  position: absolute;
+  top: 3px;
+  width: calc(100.00% - 9px);
+}
+.cards .path-r8xiPP {
+  background-color: transparent;
+  height: calc(100.00% - 6px);
+  left: 5px;
+  object-fit: cover;
+  position: absolute;
+  top: 3px;
+  width: calc(100.00% - 9px);
+}
+.cards .path-rURqF7 {
+  background-color: transparent;
+  height: 22px;
+  object-fit: cover;
+  position: absolute;
+  right: calc(49.85% - 11px);
+  top: 29px;
+  width: 22px;
+}
+.cards .path-rsJ86F {
+  background-color: transparent;
+  height: 22px;
+  object-fit: cover;
+  position: absolute;
+  right: calc(17.79% - 3px);
+  top: 29px;
+  width: 17px;
+}
+.cards .path-xa6DRw {
+  background-color: transparent;
+  bottom: calc(29.00% - 5px);
+  height: 16px;
+  left: calc(17.16% - 4px);
+  object-fit: cover;
+  position: absolute;
+  width: 22px;
+}
+.cards .path-xxrdP8 {
+  background-color: transparent;
+  height: calc(100.00% - 8px);
+  left: 3px;
+  object-fit: cover;
+  position: absolute;
+  top: 4px;
+  width: calc(100.00% - 6px);
+}
+.cards .path-yIUShw {
+  background-color: transparent;
+  height: calc(100.00% - 8px);
+  left: 3px;
+  object-fit: cover;
+  position: absolute;
+  top: 4px;
+  width: calc(100.00% - 6px);
+}
+.cards .photo-NcUzCx {
+  /* background-color: transparent;
+  border-radius: 12px;
+  height: calc(100.00% + 21px);
+  left: -22px;
+  object-fit: cover;
+  position: absolute;
+  top: -8px;
+  width: 165px; */
+  background-color: transparent;
+    border-radius: 12px;
+    height: calc(75% + 21px);
+    left: 4px;
+    object-fit: cover;
+    position: absolute;
+    top: 7px;
+    width: 120px;
+}
+.cards .photo-jFBaEs {
+  background-color: transparent;
+  border-radius: 12px;
+  height: calc(100.00% + 21px);
+  object-fit: cover;
+  position: absolute;
+  right: -22px;
+  top: -8px;
+  width: 165px;
+}
+.cards .picture-7PE8rt {
+  background-color: transparent;
+  border-radius: 12px;
+  bottom: calc(28.79% - 30px);
+  height: 104px;
+  left: 0px;
+  object-fit: cover;
+  position: absolute;
+  width: calc(100.00% - 8px);
+}
+.cards .points-9y5Whn {
+  background-color: transparent;
+  height: 10px;
+  left: 0px;
+  position: absolute;
+  top: calc(50.00% - 5px);
+  width: 56px;
+}
+.cards .points-SN8cJk {
+  background-color: transparent;
+  height: 10px;
+  left: 0px;
+  position: absolute;
+  top: calc(50.00% - 5px);
+  width: 56px;
+}
+.cards .points-x0C4MF {
+  background-color: transparent;
+  height: 10px;
+  left: 0px;
+  position: absolute;
+  top: calc(50.00% - 5px);
+  width: 56px;
+}
+.cards .points-zis7jh {
+  background-color: transparent;
+  height: 10px;
+  left: 0px;
+  position: absolute;
+  top: calc(50.00% - 5px);
+  width: 25px;
+}
+.cards .post-image-u2rv7T {
+  background-color: transparent;
+  height: 264px;
+  left: 0px;
+  position: absolute;
+  top: 44px;
+  width: 100%;
+}
+.cards .post-u2rv7T {
+  background-color: transparent;
+  height: 221px;
+  left: 0px;
+  position: absolute;
+  top: calc(31.91% - 71px);
+  width: 100%;
+}
+.cards .rating-I52Hom {
+  background-color: transparent;
+  height: 10px;
+  position: absolute;
+  right: 0px;
+  top: calc(50.00% - 5px);
+  width: 66px;
+}
+.cards .rating-ZlZSDz {
+  background-color: transparent;
+  height: 10px;
+  position: absolute;
+  right: 0px;
+  top: calc(33.33% - 3px);
+  width: 66px;
+}
+.cards .rating-rxwvK5 {
+  background-color: transparent;
+  height: 10px;
+  position: absolute;
+  right: 0px;
+  top: calc(50.00% - 5px);
+  width: 66px;
+}
+.cards .rating-zAmvZl {
+  background-color: transparent;
+  height: 10px;
+  position: absolute;
+  right: 0px;
+  top: calc(50.00% - 5px);
+  width: 68px;
+}
+.cards .repeat-grid-3-zis7jh {
+  background-color: transparent;
+  height: 10px;
+  position: absolute;
+  right: 0px;
+  top: calc(50.00% - 5px);
+  width: 40px;
+}
+.cards .settings-KrkUCA {
+  background-color: transparent;
+  bottom: 40px;
+  height: 15px;
+  letter-spacing: 0.00px;
+  line-height: 44px;
+  position: absolute;
+  right: calc(49.49% - 23px);
+  text-align: center;
+  white-space: nowrap;
+  width: 46px;
+}
+.cards .tbd-ZlZSDz {
+  background-color: transparent;
+  height: calc(100.00% + 2px);
+  left: 0px;
+  letter-spacing: 0.00px;
+  line-height: 16px;
+  position: absolute;
+  text-align: left;
+  top: 0px;
+  white-space: nowrap;
+  width: 32px;
+}
+.cards .walking-bezP9W {
+  background-color: transparent;
+  height: calc(100.00% + 1px);
+  left: 26px;
+  letter-spacing: 0.00px;
+  line-height: 16px;
+  position: absolute;
+  text-align: left;
+  top: 0px;
+  white-space: nowrap;
+  width: 63px;
+}
+.cards .we-must-believe-ust-be-attained-fZaZom {
+  background-color: transparent;
+  bottom: calc(45.16% - 29px);
+  color: var(--shadow-blue);
+  /* font-family: 'Mada', 'Almarai','Cairo','Reem Kufi' !important; */
+  font-family: 'Almarai' !important;
+
+
+  font-size: var(--font-size-xl);
+  font-style: normal;
+  font-weight: 400;
+  height: 64px;
+  left: 24px;
+  letter-spacing: 0.00px;
+  line-height: 22px;
+  position: absolute;
+  text-align: left;
+  width: calc(100.00% - 46px);
+}
+.cards .when-i-stand-be-ing-you-gave-me-Gmx0xT {
+  background-color: transparent;
+  color: var(--white);
+  /* font-family: 'Mada', 'Almarai','Cairo','Reem Kufi' !important; */
+  font-family: 'Almarai' !important;
+
+
+  font-size: var(--font-size-xl);
+  font-style: normal;
+  font-weight: 400;
+  height: 88px;
+  left: 0px;
+  letter-spacing: 0.00px;
+  line-height: 22px;
+  opacity: 0.64;
+  position: absolute;
+  text-align: left;
+  top: -4px;
+  width: calc(100.00% + 2px);
+}
+.cards .x0-vXpl8A {
+  background-color: transparent;
+  height: 10px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 10px;
+}
+.cards .x01-fnqAc1 {
+  background-color: transparent;
+  height: 10px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 10px;
+}
+.cards .x03-yYXJSR {
+  background-color: transparent;
+  height: 10px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 10px;
+}
+.cards .x04-femFOn {
+  background-color: transparent;
+  height: 10px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 10px;
+}
+.cards .x05-x5HGpx {
+  background-color: transparent;
+  height: 10px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 10px;
+}
+.cards .x1-hour-ago-GQpxv1 {
+  background-color: transparent;
+  bottom: 0px;
+  color: var(--white);
+  /* font-family: 'Mada', 'Almarai','Cairo','Reem Kufi' !important; */
+  font-family: 'Almarai' !important;
+
+
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 400;
+  height: 14px;
+  letter-spacing: 0.00px;
+  line-height: 12px;
+  opacity: 0.56;
+  position: absolute;
+  right: calc(37.14% - 21px);
+  text-align: left;
+  white-space: nowrap;
+  width: 56px;
+}
+.cards .x1-vXpl8A {
+  background-color: transparent;
+  height: 10px;
+  left: 14px;
+  position: absolute;
+  top: 0px;
+  width: 10px;
+}
+.cards .x11-fnqAc1 {
+  background-color: transparent;
+  height: 10px;
+  left: 14px;
+  position: absolute;
+  top: 0px;
+  width: 10px;
+}
+.cards .x12-yYXJSR {
+  background-color: transparent;
+  height: 10px;
+  left: 14px;
+  position: absolute;
+  top: 0px;
+  width: 10px;
+}
+.cards .x13-femFOn {
+  background-color: transparent;
+  height: 10px;
+  left: 14px;
+  position: absolute;
+  top: 0px;
+  width: 10px;
+}
+.cards .x14-x5HGpx {
+  background-color: transparent;
+  height: 10px;
+  left: 14px;
+  position: absolute;
+  top: 0px;
+  width: 10px;
+}
+.cards .x18-nov-HiKef3 {
+  background-color: transparent;
+  height: 14px;
+  left: 0px;
+  letter-spacing: 0.00px;
+  line-height: 12px;
+  opacity: 0.56;
+  position: absolute;
+  text-align: left;
+  top: 0px;
+  white-space: nowrap;
+  width: 38px;
+}
+.cards .x18-nov-fvZHk1 {
+  background-color: transparent;
+  height: 14px;
+  left: 0px;
+  letter-spacing: 0.00px;
+  line-height: 12px;
+  opacity: 0.56;
+  position: absolute;
+  text-align: left;
+  top: 0px;
+  white-space: nowrap;
+  width: 38px;
+}
+.cards .x2-vXpl8A {
+  background-color: transparent;
+  height: 10px;
+  left: 28px;
+  position: absolute;
+  top: 0px;
+  width: 10px;
+}
+.cards .x21-yYXJSR {
+  background-color: transparent;
+  height: 10px;
+  left: 28px;
+  position: absolute;
+  top: 0px;
+  width: 10px;
+}
+.cards .x22-femFOn {
+  background-color: transparent;
+  height: 10px;
+  left: 28px;
+  position: absolute;
+  top: 0px;
+  width: 10px;
+}
+.cards .x23-x5HGpx {
+  background-color: transparent;
+  height: 10px;
+  left: 28px;
+  position: absolute;
+  top: 0px;
+  width: 10px;
+}
+.cards .x256-1x4bA8 {
+  background-color: transparent;
+  color: var(--gray-suit);
+  /* font-family: 'Mada', 'Almarai','Cairo','Reem Kufi' !important; */
+  font-family: 'Almarai' !important;
+
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 600;
+  height: 14px;
+  letter-spacing: 0.00px;
+  line-height: 12px;
+  position: absolute;
+  right: calc(34.81% - 9px);
+  text-align: right;
+  top: 6px;
+  white-space: nowrap;
+  width: 25px;
+}
+.cards .x256-KksInB {
+  background-color: transparent;
+  height: 14px;
+  letter-spacing: 0.00px;
+  line-height: 12px;
+  position: absolute;
+  right: calc(34.81% - 9px);
+  text-align: right;
+  top: 6px;
+  white-space: nowrap;
+  width: 25px;
+}
+.cards .x256-Qsx8To {
+  background-color: transparent;
+  height: 14px;
+  letter-spacing: 0.00px;
+  line-height: 12px;
+  position: absolute;
+  right: calc(36.22% - 9px);
+  text-align: left;
+  top: 6px;
+  white-space: nowrap;
+  width: 25px;
+}
+.cards .x3-vXpl8A {
+  background-color: transparent;
+  height: 10px;
+  left: 42px;
+  position: absolute;
+  top: 0px;
+  width: 10px;
+}
+.cards .x31-femFOn {
+  background-color: transparent;
+  height: 10px;
+  left: 42px;
+  position: absolute;
+  top: 0px;
+  width: 10px;
+}
+.cards .x32-km-N6tthi {
+  background-color: transparent;
+  height: calc(100.00% + 1px);
+  letter-spacing: 0.00px;
+  line-height: 18px;
+  opacity: 0.98;
+  position: absolute;
+  right: -2px;
+  text-align: right;
+  top: 0px;
+  white-space: nowrap;
+  width: 45px;
+}
+.cards .x32-x5HGpx {
+  background-color: transparent;
+  height: 10px;
+  left: 42px;
+  position: absolute;
+  top: 0px;
+  width: 10px;
+}
+.cards .x33-km-qgQmbW {
+  background-color: transparent;
+  height: calc(100.00% + 1px);
+  letter-spacing: 0.00px;
+  line-height: 18px;
+  opacity: 0.98;
+  position: absolute;
+  right: -2px;
+  text-align: right;
+  top: 0px;
+  white-space: nowrap;
+  width: 45px;
+}
+.cards .x4-k-1x4bA8 {
+  background-color: transparent;
+  color: var(--gray-suit);
+  /* font-family: 'Mada', 'Almarai','Cairo','Reem Kufi' !important; */
+  font-family: 'Almarai' !important;
+
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 600;
+  height: 14px;
+  letter-spacing: 0.00px;
+  line-height: 12px;
+  position: absolute;
+  right: 26px;
+  text-align: right;
+  top: 6px;
+  white-space: nowrap;
+  width: 19px;
+}
+.cards .x4-k-KksInB {
+  background-color: transparent;
+  height: 14px;
+  letter-spacing: 0.00px;
+  line-height: 12px;
+  position: absolute;
+  right: 26px;
+  text-align: right;
+  top: 6px;
+  white-space: nowrap;
+  width: 19px;
+}
+.cards .x4-k-Qsx8To {
+  background-color: transparent;
+  height: 14px;
+  letter-spacing: 0.00px;
+  line-height: 12px;
+  position: absolute;
+  right: 24px;
+  text-align: left;
+  top: 6px;
+  white-space: nowrap;
+  width: 20px;
+}
+.cards .x76-km-bezP9W {
+  background-color: transparent;
+  height: calc(100.00% + 1px);
+  letter-spacing: 0.00px;
+  line-height: 18px;
+  opacity: 0.98;
+  position: absolute;
+  right: -2px;
+  text-align: right;
+  top: 0px;
+  white-space: nowrap;
+  width: 44px;
+}
+.cards .x8-nov-AvW2ES {
+  background-color: transparent;
+  bottom: -1px;
+  height: 14px;
+  left: calc(37.60% - 12px);
+  letter-spacing: 0.00px;
+  line-height: 12px;
+  opacity: 0.56;
+  position: absolute;
+  text-align: left;
+  white-space: nowrap;
+  width: 33px;
+}
+.cards .x8-nov-lOahEh {
+  background-color: transparent;
+  bottom: -1px;
+  height: 14px;
+  left: calc(36.43% - 12px);
+  letter-spacing: 0.00px;
+  line-height: 12px;
+  opacity: 0.56;
+  position: absolute;
+  text-align: left;
+  white-space: nowrap;
+  width: 33px;
+}
+.cards .you-cant-fall-i-e-on-the-ground-HiKef3 {
+  background-color: transparent;
+  bottom: 2px;
+  color: var(--shadow-blue);
+  /* font-family: 'Mada', 'Almarai','Cairo','Reem Kufi' !important; */
+  font-family: 'Almarai' !important;
+
+
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 400;
+  height: 62px;
+  left: 0px;
+  letter-spacing: 0.00px;
+  line-height: 20px;
+  position: absolute;
+  text-align: left;
+  width: calc(100.00% + 2px);
+}

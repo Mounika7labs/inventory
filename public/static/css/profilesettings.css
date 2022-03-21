@@ -1,0 +1,393 @@
+.doctortimeslot-container{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /* overflow-y: auto; */
+  /* overflow-x: hidden; */
+  /* font-family: 'Mada', 'Almarai','Cairo','Reem Kufi' !important; */
+  font-family: 'Almarai' !important;
+
+
+}
+
+.doctortimeslot-container .top-container{
+  position: fixed;
+  right: 16px;
+  top: 15px;
+  width: 46px;
+
+}
+.doctortimeslot-container .MuiGrid-container{
+  margin-bottom: 15px !important;
+}
+.modal-dialog {
+  width: 100% !important;
+}
+
+
+.content-profilesettings{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    margin-bottom: 34px;
+    width: 100%;
+    /* font-family: 'Mada', 'Almarai','Cairo','Reem Kufi' !important; */
+    font-family: 'Almarai' !important;
+
+}
+
+.chat-profilecard{
+    border-radius: 12px !important;
+    box-shadow: 0px 4px 16px #455b6314 !important;
+    height: auto !important;
+    width: 93% !important;
+    text-align: right  !important;
+      border:none !important;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 20px;
+      background-color: #353A50 !important;
+      color: white;
+      padding: 16px;
+      /* font-family: 'Mada', 'Almarai','Cairo','Reem Kufi' !important; */
+      font-family: 'Almarai' !important;
+
+}
+
+.profilesettings-button {
+  display: block !important;
+    background-color: var(--blueberry) !important;
+    border-color: var(--blueberry) !important;
+    border-radius: 12px !important;
+    width: 97% !important;
+    height: 52px !important;
+    color: var(--white) !important;
+    font-size: 0.938rem !important;
+    font-style: normal !important;
+    font-weight: 600 !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    /* margin-top: 58px !important; */
+  }
+
+  .savetimeslot-button{
+    display: block !important;
+    background-color: var(--blueberry) !important;
+    border-color: var(--blueberry) !important;
+    border-radius: 12px !important;
+    width: 90% !important;
+    height: 52px !important;
+    color: var(--white) !important;
+    font-size: 0.938rem !important;
+    font-style: normal !important;
+    font-weight: 600 !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  .saveeducation-button{
+    display: block !important;
+    background-color: var(--blueberry) !important;
+    border-color: var(--blueberry) !important;
+    border-radius: 12px !important;
+    width: 90% !important;
+    height: 52px !important;
+    color: var(--white) !important;
+    font-size: 0.938rem !important;
+    font-style: normal !important;
+    font-weight: 600 !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin-top: 10px !important;
+  }
+  .patientaddeducation-button{
+    display: block !important;
+    background-color: var(--fiord) !important;
+    border-color: var(--fiord) !important;
+    border-radius: 12px !important;
+    width: 50% !important;
+    height: 43px !important;
+    color: var(--white) !important;
+    font-size: 0.938rem !important;
+    font-style: normal !important;
+    font-weight: 600 !important;
+    /* margin-left: auto !important; */
+    /* margin-right: auto !important; */
+    margin-right: 10px;
+    font-family: 'Almarai' !important;
+    margin-bottom: 17px;
+
+}
+.educationinput .form-control{
+  height: 52px !important;
+  width: 280px !important;
+  background-color: var(--fiord) !important;
+  border-color: var(--fiord) !important;
+  color: var(--manatee) !important;
+  border-radius: 12px !important;
+  box-shadow: 0px 3px 15px #0000001f !important;
+  /* font-family: 'Mada', 'Almarai','Cairo','Reem Kufi' !important; */
+  font-family: 'Almarai' !important;
+  font-size: 0.938rem !important;
+  font-style: normal !important;
+  font-weight: 600 !important;
+  opacity: 1 !important;
+}
+
+  .content-profilesettings .form-control, .timeslotform .form-control {
+    height: 52px !important;
+    width: 97% !important;
+    background-color: var(--fiord) !important;
+    border-color: var(--fiord) !important;
+    color: var(--manatee) !important;
+    border-radius: 12px !important;
+    box-shadow: 0px 3px 15px #0000001f !important;
+    font-size: 0.938rem !important;
+    font-style: normal !important;
+    font-weight: 600 !important;
+    opacity: 1 !important;
+    margin-left: auto;
+    margin-right: auto;
+    /* font-family: 'Mada', 'Almarai','Cairo','Reem Kufi' !important; */
+    font-family: 'Almarai' !important;
+
+}
+
+
+
+.scheduleday-container{
+/* padding: 10px; */
+}
+
+.day{
+float: left;
+}
+
+.day-toggle{
+float: right;
+}
+.aday{
+  float: right;
+  }
+  
+  .aday-toggle{
+  float: left;
+  }
+.toggle_off{
+  background-color: #6c757d !important;
+  border-color: #6c757d !important;
+}
+
+.toggle_on{
+  background-color: #5773ff !important;
+  border-color: #5773ff !important;
+}
+
+.scheduletime-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  direction: rtl !important;
+
+}
+
+.scheduletime-slot{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.scheduletime-button{
+  background-color: transparent !important;
+  border-color: #5773ff !important;
+  margin-top: 10px !important;
+  direction: ltr !important;
+}
+
+.savetimings-button{
+  display: block !important;
+  background-color: var(--blueberry) !important;
+  border-color: var(--blueberry) !important;
+  border-radius: 12px !important;
+  width: 93% !important;
+  height: 52px !important;
+  color: var(--white) !important;
+  font-size: 0.938rem !important;
+  font-style: normal !important;
+  font-weight: 600 !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  margin-bottom: 70px !important;
+  /* font-family: 'Mada', 'Almarai','Cairo','Reem Kufi' !important; */
+  font-family: 'Almarai' !important;
+
+}
+.modal-content{
+  /* font-family: 'Mada', 'Almarai','Cairo','Reem Kufi' !important; */
+  font-family: 'Almarai' !important;
+
+}
+
+
+/* .chipsContainer{
+  border:1px solid red !important
+} */
+
+.test{
+  width: 90% !important;
+    margin-left: auto;
+    margin-right: auto;
+    height: 52px;
+}
+
+.profilePicContainer{
+  margin-left: 15px;
+  margin-bottom: 15px;
+  margin-top: 20px;
+  display: flex;
+  margin-right: 10px;
+}
+
+.profileno-data{
+  color: #959dad  !important;
+}
+
+
+.profilepiclabel{
+  color: var(--manatee) !important;
+  font-size: 0.938rem !important;
+  font-style: normal !important;
+  font-weight: 600 !important;
+  margin-bottom: 10px;
+  display: flex !important;
+  margin-right: 5px !important;
+}
+.alllabel{
+  color: var(--manatee) !important;
+  font-size: 0.938rem !important;
+  font-style: normal !important;
+  font-weight: 600 !important;
+  margin-bottom: 10px;
+  display: flex !important;
+  margin-right: 10px !important;
+  margin-left: 10px !important;
+}
+.speciality-formgroup{
+  width: 97% !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+.previewContainer{
+  width: 150px;
+  height: 150px;
+  margin-left: 20px;
+  margin-bottom: 15px;
+  display: flex !important;
+  margin-right: 10px;
+}
+
+.pvalidation-error{
+  color:var(--manatee);
+  font-size: 0.938rem;
+  margin-bottom: 10px;
+}
+
+
+.doctortimeslot-container .MuiTabs-flexContainer{
+  display: block !important; 
+   /* overflow-x: scroll !important; */
+}
+
+.MuiAppBar-colorPrimary{
+  background-color: #fff !important;
+}
+
+.doctortimeslot-container .MuiTabs-scroller{
+  overflow-x: scroll !important;
+  overflow-y: hidden !important;
+}
+.education-container{
+  color: var(--manatee) !important;
+  font-size: 1.1rem !important;
+  font-style: normal !important;
+  font-weight: 600 !important;
+  width: 97%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: right !important;
+}
+
+
+.dgroup .form-control{
+  /* width: 50% !important; */
+} 
+
+.content-profilesettings .degree-class{
+    width: 96% !important;
+    padding-left: 9px !important;
+ 
+  }
+
+  .degree-yearcontainer{
+    display: flex;
+  }
+
+  .add-more{
+    width: 97%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .add-more img{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    margin-bottom: 15px;
+  }
+
+  .delete-container img{ 
+    width: 24px;
+    height: 24px;
+    /* float: right; */
+  }
+
+
+ .educationtable-container{
+   color: var(--fiord) !important;
+ }
+
+ .educationtable-container thead {
+  height: 54px !important;
+  background-color:var(--fiord) !important;
+  color: #fff !important;
+  line-height: 54px !important;
+}
+
+ .education-row td,th{
+  color: var(--manatee) !important;
+  padding-right: 8px  !important;
+}
+.education-update{
+  font-size: 0.75rem!important;
+    /* font-family: 'Mada', 'Almarai','Cairo','Reem Kufi' !important; */
+    font-family: 'Almarai' !important;
+    font-style: normal !important;
+    background-color: #454f63 !important;
+    margin-bottom: 10px !important;
+    margin-top: 10px !important;
+    width: 70px !important;
+    height: 33px !important;
+}
+
+.education-edit{
+  width: 23px;
+  height: 23px;
+}
+
+.education-delete{
+  width: 23px;
+  height: 23px;
+}

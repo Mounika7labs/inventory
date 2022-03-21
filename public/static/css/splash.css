@@ -1,0 +1,160 @@
+.splash-container {
+  position: relative;
+  width: auto;
+  height: 100vh;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  
+}
+
+.splash-container .welcome-to {
+  position: absolute;
+  background-color: transparent;
+  color: var(--white);
+  font-size: 2.625rem;
+  font-style: normal;
+  letter-spacing: 0.00px;
+  line-height: 55px;
+  text-align: center;
+  top: 45px;
+} 
+
+.splash-container .home-to {
+  position: absolute;
+  bottom: 380px;
+  background-color: transparent;
+  color: var(--white);
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 0.00px;
+  line-height: 24px;
+  opacity: 0.78;
+  text-align: center;
+} 
+.splash-container .powered-by{
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.splash-container .sub-text{
+  font-size: 3.625rem;
+  font-weight: 600 !important;
+
+} 
+
+.splash-container .i-text{
+  color: #FE0505;
+}
+
+.splash-container .continue-with{
+  background-color: transparent;
+    margin-top: 280px;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    font-size: 0.75rem;
+    font-weight: 600 !important;
+
+}
+
+.splash-container .buttons-xUsx1L{
+  width: 327px;
+  margin-top: 217px;
+  height: 300px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.splash-container .bg-1Ui4hb{
+  background-color: var(--turquoise-pearl) !important;
+  border-radius: 12px !important;
+  width: 100% !important;
+  height: 52px;
+  color: var(--white) !important;
+  font-size: 0.938rem !important;
+  font-style: normal !important;
+  font-weight: 600 !important;
+  text-align: center !important;
+}
+.splash-container .bg-UZPtM3 {
+  background-color: #353a50 !important;
+  border: 1px solid var(--blueberry) !important;
+  border-radius: 12px !important;
+  height: 52px !important;
+  width: 100% !important;
+  color: var(--white) !important;
+  font-size: 0.938rem !important;
+  font-style: normal !important;
+  font-weight: 600 !important;
+  text-align: center !important;
+  -webkit-text-stroke: 1px #707070 !important; 
+}
+.splash-container .bottom-C61RwL{
+  position: absolute;
+  top:780px;
+}
+
+.splash-container .home-indicatordark-7YEL5c {
+  background-color: transparent;
+  height: 100%;
+  width: 100%;
+}
+.splash-container .indicator-LHZjI1 {
+  background-color: var(--white);
+  border-radius: 1px;
+  height: 3px;
+  opacity: 0.2;
+  width: 134px;
+}
+
+.splash-signup-button{
+  background-color: #3acce1 !important;
+  border-color: #3acce1!important;
+  border-radius: 12px !important;
+  width: 100% !important;
+  height: 52px !important;
+  color: var(--white) !important;
+  font-family: 'Almarai' !important;
+  font-size: 0.938rem !important;
+  font-style: normal !important;
+  font-weight: 600 !important;
+  margin-top: 18px !important;
+}
+.splash-signin-button{
+  background-color: var(--blueberry) !important;
+  border-color: var(--blueberry) !important;
+  border-radius: 12px !important;
+  width: 100% !important;
+  height: 52px !important;
+  color: var(--white) !important;
+  font-family: 'Almarai' !important;
+  font-size: 0.938rem !important;
+  font-style: normal !important;
+  font-weight: 600 !important;
+  margin-top: 15px !important;
+}
+
+.submitbutton{
+  margin-top: -40px;
+}
+
+.return-button{
+  background-color: #3acce1 !important;
+  border-color: #3acce1!important;
+  border-radius: 12px !important;
+  width: 100% !important;
+  height: 52px !important;
+  color: var(--white) !important;
+  font-family: 'Almarai' !important;
+  font-size: 0.938rem !important;
+  font-style: normal !important;
+  font-weight: 600 !important;
+  margin-top: 18px !important;
+}

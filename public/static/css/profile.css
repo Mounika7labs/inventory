@@ -1,0 +1,262 @@
+.profile-container{
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        overflow-y: visible;
+    overflow-x: visible;
+    /* font-family: 'Mada', 'Almarai','Cairo','Reem Kufi' !important; */
+    font-family: 'Almarai' !important;
+
+}
+
+.profile-modalcontainer .modal-body{
+  flex-direction: column !important;
+  display: flex !important;
+  padding: 0.8rem !important;
+}
+.profile-details{
+    position: absolute;
+    top: 320px;
+    overflow: auto;
+    width: 93% !important;
+}
+
+.profile-card{
+    border-radius: 12px !important;
+    height: auto !important;
+    width: 100% !important;
+    text-align: right  !important;
+      border:none !important;
+      background-color: #2A2E43 !important;
+      margin-bottom: 60px !important;
+    }
+
+.photo-name{
+display: flex;
+flex-direction: row;
+margin-top: 25px;
+margin-left: 10px;
+margin-right: 10px;
+}
+.testt{
+  display: flex;
+}
+.carousel-profilecontainer{
+  display: flex;
+}
+
+.profile-container .profile-pic{
+    width: 60px;
+    height: 60px;
+    border-radius: 12px;
+}
+.profile-container .profile-name{
+    
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    color: #FFFFFF;
+    padding-left: 24px;
+    padding-top: 21px;
+    padding-right: 24px;
+   
+}
+
+.profile-container .break-line{
+    color: #454f63 !important;
+    opacity: 0.50 !important;
+    margin-top: 20px !important;
+    margin-bottom: 10px !important;
+  }
+  .profile-container .profilebreak-line{
+    color: #454f63 !important;
+    opacity: 0.50 !important;
+    margin-top: 20px !important;
+    margin-bottom: 10px !important;
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .address-data{
+    font-size: 0.9rem;
+    font-style: normal;
+    font-weight: 600;
+    color: #FDFEFF;
+    margin-bottom: 2px;
+    display: flex;
+  }
+  .sub-container{
+    
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    color: #FFFFFF;
+    text-align: right;
+    margin-left: 20px;
+    margin-right: 20px;
+
+  }
+
+
+  .profile-container .sub-break-line{
+    color: #454f63 !important;
+    opacity: 0.50 !important;
+    margin-top: 10px !important;
+  }
+  .profile-container  .profile-icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .profile-container .profilepic-container{
+    width: 40px;
+    height: 40px;
+    background-color: #353A50;
+    border-radius: 8px;
+    display: flex;
+}
+.profile-container .profilepic-container .call, .message, .chatting{
+    width: 16px;
+    height: 16px;
+    color: #FFFFFF;
+    margin:auto;
+}
+.address-container{
+    margin-left:20PX;
+    /* display: flex; */
+    margin-right: 20px;
+   
+}
+
+.address{
+    
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    color: #FDFEFF;
+    margin-top: 20px;
+    margin-bottom: 2px;
+    display: flex;
+}
+
+.phone-email{
+    
+    font-size: 0.875rem;
+    font-style: normal;
+    /* font-weight: 600; */
+    color: #FFFFFF90;
+    display: flex;
+}
+
+.profile-container .appointment-button{
+    background-color: var(--turquoise-pearl) !important;
+    border-radius: 12px !important;
+    width: 100% !important;
+    height: 52px;
+    color: var(--white) !important;
+    font-size: 0.813rem !important;
+    font-style: normal !important;
+    font-weight: 600 !important;
+    text-align: center !important;
+  }
+
+  .appointment-container{
+    margin-bottom: 25px !important;
+    margin-top: 50px;
+    width: 93%;
+    margin-left: auto;
+    margin-right: auto;
+    direction: ltr  !important;
+  }
+
+  .modal{
+      display: flex !important;
+      align-items: center !important;
+  }
+  .modal-dialog{
+    margin: 1.5rem !important;
+  }
+  .close{
+      border: none !important;
+  }
+  .handlesignup{
+    color: #fff !important;
+    background-color: #2d5bad !important;
+    text-transform: none !important;
+    font-size: 14px !important;
+    font-weight: 1000 !important;
+    line-height: 15px !important;
+    width: 160px !important;
+    height: 40px !important;
+    text-align: center !important;
+    margin-top: 10px;
+  }
+
+  
+  .react-slideshow-container+ul.indicators{
+      display: none !important;
+  } 
+
+  .react-slideshow-container .default-nav{
+      display: none !important;
+  }
+
+.link-icons{
+    padding-left: 33px;
+}
+
+.appointment-icon{
+    width: 22px;
+    height: 22px;
+    margin-right: 13px;
+    margin-left: 13px;
+}
+
+.slide-image{
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.profile-speciality{
+  display: flex;
+}
+.profile-city{
+  display: flex;
+  margin-right: 15px;
+}
+
+.MuiExpansionPanelDetails-root{
+  display: block !important;
+  padding: 8px 45px 16px !important;
+
+}
+@media screen and (min-width: 700px) and (max-width:1019px) {
+    .profile-details{
+        top: 380px !important;
+    }
+  }
+
+
+@media screen and (min-width: 1020px) {
+    .profile-details{
+        top: 490px !important;
+    }
+  }
+
+
+.moredetails_container{
+  border: 1px solid grey;
+  color: #FFFFFF !important;
+  /* opacity: 0.50 !important; */
+  margin-top: 20px !important;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-right: 6px;
+  margin-left: 6px;
+  padding-right: 10px;
+}

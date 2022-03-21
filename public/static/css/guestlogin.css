@@ -1,0 +1,48 @@
+.guestlogin-container{
+    position: relative;
+    width: auto;
+    height: 100vh;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.buttons-guest{
+    width: 327px;
+    height: 130px;
+    position: absolute;
+    top: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.guestlogin-container .bg-1Ui4hb{
+    background-color: var(--turquoise-pearl) !important;
+    border-radius: 12px !important;
+    width: 100% !important;
+    height: 52px;
+    color: var(--white) !important;
+    font-size: 0.938rem !important;
+    font-style: normal !important;
+    font-weight: 600 !important;
+    text-align: center !important;
+}
+
+.guestlogin-container .bg-UZPtM3 {
+    background-color: #353a50 !important;
+    border: 1px solid var(--blueberry) !important;
+    border-radius: 12px !important;
+    height: 52px !important;
+    width: 100% !important;
+    color: var(--white) !important;
+    font-size: 0.938rem !important;
+    font-style: normal !important;
+    font-weight: 600 !important;
+    text-align: center !important;
+    -webkit-text-stroke: 1px #707070 !important; 
+  }
+
+
+  

@@ -1,0 +1,62 @@
+.patientstop-container{
+    position: fixed;
+    right: 0px;
+    top: 20px;
+    width: 46px;
+}
+
+.patient-addcontainer{
+    position: absolute;
+    top: 56px;
+    left: 56px;
+    width: 79%;
+}
+
+.patient-content{
+    background-color: transparent;
+    position: absolute;
+    top: 102px;
+    overflow-x: hidden;
+    width: 93% !important;
+}
+
+
+.showpatient-content{
+    background-color: transparent;
+    position: absolute;
+    top: 590px;
+    overflow-x: hidden;
+    width: 93% !important;
+}
+
+.patient-profilecard{
+    border-radius: 12px !important;
+    box-shadow: 0px 4px 16px #455b6314 !important;
+    height: auto !important;
+    width: 93% !important;
+    text-align: right !important;
+    border: none !important;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 107px;
+    background-color: #353A50 !important;
+    color: white;
+    padding: 16px;
+    font-family: 'Almarai' !important;
+}
+
+
+.patientadd-button{
+    display: block !important;
+    background-color: var(--fiord) !important;
+    border-color: var(--fiord) !important;
+    border-radius: 12px !important;
+    width: 40% !important;
+    height: 41px !important;
+    color: var(--white) !important;
+    font-size: 0.938rem !important;
+    font-style: normal !important;
+    font-weight: 600 !important;
+    margin-right: 10px;
+    font-family: 'Almarai' !important;
+}

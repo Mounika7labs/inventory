@@ -1,0 +1,123 @@
+/* screen - onboarding */
+
+.onboarding {
+  background-color: var(--ebony-clay);
+  height: 300px;
+  overflow: hidden;
+  overflow-x: hidden;
+  position: relative;
+  width: 2275px;
+}
+.onboarding .bg-e0iCMh {
+  background-color: var(--ebony-clay);
+  height: 100%;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+}
+.onboarding .gradient-e0iCMh {
+  background-color: transparent;
+  bottom: 0px;
+  height: 16px;
+  left: 0px;
+  position: absolute;
+  width: 100%;
+}
+.onboarding .presentationheader-C61RwL {
+  background-color: transparent;
+  height: 300px;
+  left: 0px;
+  position: relative;
+  top: 0px;
+  width: 2275px;
+}
+.onboarding .rectangle-432kYb {
+  background-color: var(--turquoise-pearl);
+  height: 100%;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 570px;
+}
+.onboarding .rectangle-7jnNyq {
+  background-color: var(--dodger-blue);
+  height: 100%;
+  position: absolute;
+  right: calc(33.45% - 191px);
+  top: 0px;
+  width: 570px;
+}
+.onboarding .rectangle-Axsvhs {
+  background-color: var(--blueberry-2);
+  height: 100%;
+  left: calc(33.45% - 191px);
+  position: absolute;
+  top: 0px;
+  width: 570px;
+}
+.onboarding .rectangle-SN45Pl {
+  background-color: var(--blueberry);
+  height: 100%;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 570px;
+}
+.onboarding .title-e0iCMh {
+  background-color: transparent;
+  bottom: calc(32.00% - 48px);
+  color: var(--white);
+  /* font-family: 'Mada', 'Almarai','Cairo','Reem Kufi' !important; */
+  font-family: 'Almarai' !important;
+
+  font-size: var(--font-size-xxl);
+  font-style: normal;
+  font-weight: 600;
+  height: 150px;
+  left: 80px;
+  letter-spacing: 0.00px;
+  line-height: 80px;
+  position: absolute;
+  text-align: left;
+  width: 669px;
+}
+.onboarding .x02-e0iCMh {
+  background-color: transparent;
+  color: var(--shadow-blue);
+  /* font-family: 'Mada', 'Almarai','Cairo','Reem Kufi' !important; */
+  font-family: 'Almarai' !important;
+
+  font-size: var(--font-size-xxxl);
+  font-style: normal;
+  font-weight: 600;
+  height: calc(100.00% - 118px);
+  letter-spacing: 0.00px;
+  line-height: 80px;
+  opacity: 0.55;
+  position: absolute;
+  right: 87px;
+  text-align: right;
+  top: 121px;
+  white-space: nowrap;
+  width: 227px;
+}
+.onboarding .xd-e0iCMh {
+  background-color: transparent;
+  color: var(--shadow-blue);
+  /* font-family: 'Mada', 'Almarai','Cairo','Reem Kufi' !important; */
+  font-family: 'Almarai' !important;
+
+  font-size: var(--font-size-xxxl);
+  font-style: normal;
+  font-weight: 600;
+  height: 202px;
+  left: 80px;
+  letter-spacing: 0.00px;
+  line-height: 80px;
+  opacity: 0.32;
+  position: absolute;
+  text-align: left;
+  top: 100px;
+  width: 263px;
+}

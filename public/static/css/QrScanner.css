@@ -1,0 +1,21 @@
+.qrscanner{
+    width: 90% !important;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 55px;
+
+}
+.qrresult{
+    align-items: center;
+    padding: 12px;
+    margin-top: 20px;
+}
+.redeemqr{
+    width:300px;
+height:40px;
+border-radius: 12px 12px 12px !important;
+    margin-top: 12px;
+    background-color: #665eff !important;
+border-color:#665eff !important ;
+
+}

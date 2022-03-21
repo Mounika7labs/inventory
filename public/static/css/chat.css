@@ -1,0 +1,236 @@
+.userchat-container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* overflow-y: auto; */
+    /* overflow-x: hidden; */
+    /* font-family: 'Mada', 'Almarai','Cairo','Reem Kufi' !important; */
+    font-family: 'Almarai' !important;
+
+  
+}
+
+.userchat-container .top-container{
+    /* width: 100%;
+    position: absolute;
+    top: 47px; */
+    position: fixed;
+    right: 16px;
+    top: 15px;
+    width: 46px;
+}
+
+.userchat-container .arrow-image{
+    width: 18px;
+    height: 21px;
+    cursor: pointer;
+}
+
+.userchat-container .share-image{
+    width: 17px;
+    height: 18px;
+    margin-left: 10px !important;
+    /* float: right; */
+    /* margin-right: 23px; */
+}
+.userchat-container .ashare-image{
+    width: 17px;
+    height: 18px;
+    margin-right: 10px !important;
+    /* float: right; */
+    /* margin-right: 23px; */
+}
+
+.top-header{
+    position: absolute;
+    top: 45px;
+    
+    font-style: normal !important;
+    font-size: 2.5rem !important;
+    font-weight: 600;
+    color: #454F63;
+}
+
+.tabs-container{
+    flex-grow: 1;
+    position: absolute;
+    top: 115px;
+    width: 100% !important;
+    overflow-x: hidden;
+    overflow-y: visible;
+    bottom: 40px;
+}
+.MuiTab-root{
+    
+    font-style: normal !important;
+    font-size: 0.813rem!important;
+    font-weight: 600 !important;
+    color: #959DAD !important;
+    background-color: #FFFFFF !important;
+  
+    opacity: 1 !important;
+}
+
+.MuiTab-textColorInherit.Mui-selected{
+    color: #454F63 !important;
+}
+
+.MuiTabs-indicator{
+    /* background-color: #3497FD !important; */
+    height: 6px !important;
+    background: #5773FF 0% 0% no-repeat padding-box  !important;
+opacity: 1 !important;
+}
+
+#simple-tabpanel-0,#simple-tabpanel-1,#simple-tabpanel-2{
+    background-color: #F7F7FA !important;
+    margin-bottom: 70px !important;
+}
+.chat-breakline{
+
+}
+
+.chat-card{
+    border-radius: 12px !important;
+    box-shadow: 0px 4px 16px #455b6314 !important;
+    height: auto !important;
+    width: 93% !important;
+    text-align: left  !important;
+      border:none !important;
+      margin-left: auto;
+      margin-right: auto;
+      background-color: #353A50 !important;
+      color: white;
+      /* font-family: 'Mada', 'Almarai','Cairo','Reem Kufi' !important; */
+      font-family: 'Almarai' !important;
+
+
+}
+.chat-card .card-body{
+    min-height: 194px !important;
+    height: auto !important;
+}
+
+.userchat-container .MuiGrid-container{
+    margin-bottom: 15px !important;
+}
+.chat-card0{
+    margin-top: 20px !important;
+}
+.user-basic-container{
+    display: flex;
+}
+.user-profilepic img{
+    width: 36px;
+    height: 36px;
+    border-radius: 12px;
+
+}
+
+.chat-card .card-body{
+    padding: 1.3rem 1.3rem !important;
+}
+
+.user-name{
+    
+    font-style: normal !important;
+    font-size: 1rem !important;
+    font-weight: 600 !important;
+    color: #FFFFFF !important;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.message-time{
+    
+    font-style: normal !important;
+    font-size: 0.75rem !important;
+    color: #FFFFFF !important;
+    opacity: 0.56;
+}
+
+.expand {
+    width: 20px;
+    height: 20px;
+    float: right !important;
+    opacity: 0.5;
+    display: flex;
+    
+}
+
+.aexpand{
+    width: 20px;
+    height: 20px;
+    float: left !important;
+    opacity: 0.5;
+    display: flex;  
+}
+.user-message{
+    
+    font-style: normal !important;
+    font-size: 0.875rem !important;
+    color: #FFFFFF !important;
+    opacity: 0.64;
+    margin-top: 12px;
+    margin-bottom: 15px;
+}
+
+.userchat-breakline{
+    color: #FFFFFF !important;
+  opacity: 0.05 !important;
+  margin: 0 !important;
+  height: 1px !important;
+}
+
+.usershare-image{
+    width: 15px;
+    height: 18px;
+    margin-top: 12px
+}
+
+.bottom-chatcontainer{
+    display: flex;
+    margin-top: 12px;
+    float: right;
+    color: #BBBCCD;
+    
+    font-style: normal !important;
+    font-size: 0.75rem !important;
+    font-weight: 600 !important;
+}
+
+.userchat-icon{
+    width: 18px;
+    height: 18px;
+    margin-left: 6px;
+    margin-right: 10px;
+}
+.auserchat-icon{
+    width: 18px;
+    height: 18px;
+    margin-left: 10px;
+    margin-right: 6px;
+}
+
+.favourite-icon{
+    width: 18px;
+    height: 18px;
+    margin-left: 6px;
+}
+.afavourite-icon{
+    width: 18px;
+    height: 18px;
+    margin-right: 6px;
+}
+
+
+.card-footer {
+    background-color: #353A50 !important;
+    border-top: none !important;
+    border-radius: 12px !important;
+    padding-bottom: 0.7rem !important;
+}
