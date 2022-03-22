@@ -7,7 +7,7 @@ import {
   Card, Button, Table, FormGroup, Label, Input
 } from 'reactstrap';
 
-var dbHelper = require('../util/dbHelper');
+const dbHelper = require('../util/dbHelper');
 
 //Profile state variables
 const initialState = {
@@ -82,29 +82,25 @@ function Dashboard(props) {
     return true;
   };
 
-
   //Function to get bin details
-  const getbindetails = () => {
-
-    let url = process.env.REACT_APP_API_URL + '/api/getbins';
-    axios.get(url, {
-      headers: {
-        token: localStorage.getItem("token")
+  const getbindetails = async() => {
+    await dbHelper.default.getBins().then(function (response) {
+      if (response.status === 200) {
+        if (response.rows.length !== 0) {
+          setBins(response.rows)
+          setAllBins(response.rows)
+        }
+        else {
+          setBins({ nodata: "nodata" })
+        }
+      }
+      else if(response.status ===400) {
+        setBins({ nodata: "nodata" })
       }
     }
-      ,)
-      .then(function (response) {
-        if (response.data.status === 200) {
-          if (response.data.rows.length !== 0) {
-            setBins(response.data.rows)
-            setAllBins(response.data.rows)
-          }
-          else {
-            setBins({ nodata: "nodata" })
-          }
-        }
+    )
+   
 
-      })
       .catch(err => { console.log(err, "get details error") })
 
   }
@@ -117,83 +113,49 @@ function Dashboard(props) {
 
 
 
-  // const addbin = () => {
-
-  //   const isValid = validate();
-  //   let url = process.env.REACT_APP_API_URL + '/api/addbin';
-  //   if (isValid) {
-  //     let axiosConfig = {
-  //       headers: {
-  //         token: localStorage.getItem("token")
-  //       },
-  //     };
-  //     let formbody = {
-  //       name: state.name,
-  //       note: state.note
-
-  //     }
-  //     axios.post(url,
-  //       formbody,
-  //       axiosConfig
-  //     )
-  //       .then(function (response) {
-  //         if (response.data.status === 200) {
-  //           setState(initialState);
-  //           addToast("Bin added successfully",
-  //             {
-  //               appearance: 'success',
-  //               autoDismiss: true,
-  //               autoDismissTimeout: 1000,
-  //               onDismiss: () => {
-  //                 setShowBin(false);
-  //                 getbindetails();
-
-  //               },
-  //             })
-  //         }
-  //         else if (response.data.status === 400) {
-  //           addToast('Bin already exists', {
-  //             appearance: 'error', autoDismiss: true,
-  //             autoDismissTimeout: 2000,
-  //           });
-  //         }
-  //       })
-  //       .catch(err => { console.log(err) })
-  //   }
-
-  // }
-  // console.log("sdf", dbHelper.default);
-  const addbin = () => {
+  
+  const  addbin = async() => {
 
     const isValid = validate();
-    // let url = process.env.REACT_APP_API_URL + '/api/addbin';
     if (isValid) {
       let formbody = {
         name: state.name,
         note: state.note,
-        date: new Date(),
-        tableName: "bins"
+        createdDate: new Date(),
+        tableName: "bins",
 
       }
      
-      dbHelper.default.addBin(formbody).then(function () {
-        setState(initialState);
-        addToast("Bin added successfully",
-          {
-            appearance: 'success',
-            autoDismiss: true,
-            autoDismissTimeout: 1000,
-            onDismiss: () => {
-              setShowBin(false);
-              getbindetails();
+await dbHelper.default.addBin(formbody)
+     
+    .then(async function (response) {
+          if(response.status && response.status===400){
+            addToast('Bin already exists', {
+                          appearance: 'error', autoDismiss: true,
+                          autoDismissTimeout: 2000,
+                        });
+          }
+          else if(response.status && response.status===200){
+            setState(initialState);
+            addToast("Bin added successfully",
+              {
+                appearance: 'success',
+                autoDismiss: true,
+                autoDismissTimeout: 1000,
+                onDismiss: () => {
+                  setShowBin(false);
+                  getbindetails();
+    
+                },
+              })
+          }
 
-            },
-          })
-      })
+    
+       })
 
       
      
-    }
+       }
 
   }
   //Function to show education form

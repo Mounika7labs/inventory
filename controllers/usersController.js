@@ -196,12 +196,24 @@ exports.addbin=async(req,res)=>{
 
  //get bins
  exports.getbins=async(req,res)=>{
-
+  db.createIndex({
+    index: {
+      fields: ['createdDate']
+    }
+  }).then(function (result) {
+    // console.log(result);
+    // yo, a result
+  }).catch(function (err) {
+    // ouch, an error
+  });
   let getbinsdata = function(callback) {
     db.find({
       selector: {
-          tableName:"bins"
+          tableName:"bins",
+          createdDate:{$exists:true}
       },
+      
+      sort: [{"createdDate": "desc"}],
    
     }).then((result) =>{
       if(result.docs.length!==0){

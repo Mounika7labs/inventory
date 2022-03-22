@@ -10,6 +10,7 @@ import {
   Card, Button,  Table, FormGroup, Label, Input, Modal, ModalHeader, ModalBody, ModalFooter
 } from 'reactstrap';
 
+const dbHelper = require('../util/dbHelper');
 
 //Profile state variables
 const initialState = {
@@ -104,24 +105,25 @@ function BinItems(props) {
 
 
   //Function to get bin item details
-  const getbinitemdetails = () => {
+  const getbinitemdetails = async() => {
+    let formbody={
+      binid: binid
+  
+  }
+  await dbHelper.default.getBinItems(formbody)
 
-    let url = process.env.REACT_APP_API_URL + '/api/getbinitems/' + binid;
-    axios.get(url, {
-      headers: {
-        token: localStorage.getItem("token")
-      }
-    }
-      ,)
-      .then(function (response) {
-        if (response.data.status === 200) {
-           if(response.data.rows.length !==0){
-            setBinItems(response.data.rows)
-            setAllBinItems(response.data.rows)
+      .then(async function (response) {
+        if (response.status === 200) {
+           if(response.rows.length !==0){
+            setBinItems(response.rows)
+            setAllBinItems(response.rows)
            }
            else{
             setBinItems({nodata:"nodata"})
            }
+        }
+        else if(response.status ===400) {
+          setBinItems({ nodata: "nodata" })
         }
         
       })
@@ -137,29 +139,24 @@ function BinItems(props) {
   
 
  
-const addbinitem = ()=>{
+const addbinitem = async()=>{
 
   const isValid = validate();
-  let url = process.env.REACT_APP_API_URL + '/api/addbinitem';
   if (isValid) {
-    let axiosConfig = {
-      headers: {
-        token: localStorage.getItem("token")
-      },
-    };
+
     let formbody={
       binid: binid,
       name: state.name,
       quantity: state.quantity,
-      items:state.items
+      items:state.items,
+      createdDate: new Date(),
+      tableName: "binitems",
   
   }
-    axios.post(url,
-      formbody,
-      axiosConfig
-     )
-      .then(function (response) {
-        if (response.data.status === 200) {
+  await dbHelper.default.addBinItem(formbody)
+
+      .then(async function (response) {
+        if(response.status && response.status===200){
           setState(initialState);
           addToast("Bin item added successfully",
             {
@@ -173,8 +170,8 @@ const addbinitem = ()=>{
               },
             })
         }
-        else if(response.data.status===400){
-          addToast('Bin already exists', {
+        else if(response.status && response.status===400){
+          addToast('Bin item already exists', {
             appearance: 'error', autoDismiss: true,
             autoDismissTimeout: 2000,
           });
@@ -253,28 +250,19 @@ const addItem = (id,count,quantity)=>{
 
 }
 
-const updateItem = (id,quantity) =>{
-  let url = process.env.REACT_APP_API_URL + '/api/updatebinitem';
-  
-    let axiosConfig = {
-      headers: {
-        token: localStorage.getItem("token")
-      },
-    };
+const updateItem = async(id,quantity) =>{
+
     let formbody={
       quantity:quantity,
       id:id
   
   }
-    axios.post(url,
-      formbody,
-      axiosConfig
-     )
-      .then(function (response) {
-        if (response.data.status === 200) {
+  await dbHelper.default.updateBinItem(formbody)
+      .then(async function (response) {
+        if (response.status === 200) {
           setState(initialState);
         }
-        else if(response.data.status===400){
+        else if(response.status===400){
         }
       })
       .catch(err => { console.log(err) })
@@ -299,16 +287,16 @@ const updateItem = (id,quantity) =>{
     }
 
       //Function to delete item data
-  const deleteSpeciality = () => {
-    let url = process.env.REACT_APP_API_URL + '/api/deletebinitem/' + deleteitemid +'/'+ deleteitemrev;
-    axios.get(url, {
-      headers: {
-        token: localStorage.getItem("token")
-      }
+  const deleteSpeciality = async() => {
+
+    let formbody = {
+     id: deleteitemid
+
     }
-      ,)
-      .then(function (response) {
-        if (response.data.status === 200) {
+
+    await dbHelper.default.deleteBinItem(formbody)
+      .then(async function (response) {
+        if (response.status === 200) {
           setConfirmDeleteItem(!confirmdeleteitem);
           getbinitemdetails()
           addToast('Bin item deleted successfully', {
