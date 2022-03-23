@@ -131,7 +131,7 @@ const dbHelpers = {
 
             }).then((items) => {
               var quantity = items.docs.reduce((accum, item) => accum + item.quantity, 0)
-
+                console.log(items);
               result.docs[i]['itemscount'] = items.docs.length;
               result.docs[i]['totalquantity'] = quantity;
               if (i + 1 === result.docs.length) {
@@ -205,8 +205,6 @@ const dbHelpers = {
               return console.log("err");
             } else {
               if (response.ok) {
-                console.log(response, "res");
-
                 localDB.sync(remoteDB, function (err, response) {
                   if (err) {
                     return console.log(err);
@@ -230,7 +228,6 @@ const dbHelpers = {
     });
   },
   addBinItem: async function (doc) {
-
     return new Promise(resolve => {
       localDB.find({
         selector: {

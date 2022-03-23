@@ -137,7 +137,6 @@ function BinItems(props) {
   
   
   
-
  
 const addbinitem = async()=>{
 
@@ -147,7 +146,7 @@ const addbinitem = async()=>{
     let formbody={
       binid: binid,
       name: state.name,
-      quantity: state.quantity,
+      quantity: parseInt(state.quantity),
       items:state.items,
       createdDate: new Date(),
       tableName: "binitems",
@@ -251,7 +250,7 @@ const addItem = (id,count,quantity)=>{
 }
 
 const updateItem = async(id,quantity) =>{
-
+  
     let formbody={
       quantity:quantity,
       id:id
