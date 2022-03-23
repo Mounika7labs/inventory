@@ -6,8 +6,8 @@ import {
 } from 'reactstrap';
 import React, { useEffect, useState } from 'react';
 import { withRouter } from "react-router-dom";
-import axios from 'axios';
 import { useToasts } from 'react-toast-notifications';
+const dbHelper = require('../util/dbHelper');
 
 
 //Initializing state variables
@@ -21,7 +21,7 @@ const initialState = {
 
 
 
-function Signin(props) {
+function Signup(props) {
   const [state, setState] = useState(initialState);
 
   const { addToast } = useToasts();
@@ -58,17 +58,17 @@ function Signin(props) {
     return true;
   };
 
-  const signup = () => {
+  const signup = async() => {
     const isValid = validate();
-    let url = process.env.REACT_APP_API_URL + '/api/user'
     if (isValid) {
-      axios.post(url, {
-        email: state.email,
-        password: state.password
-
-      })
+        let formbody={
+          email: state.email,
+          password: state.password
+  
+        }
+        await dbHelper.default.register(formbody)
         .then(function (response) {
-          if (response.data.status === 200) {
+          if(response.status && response.status===200){
             addToast('User Registered Successfully',
               {
                 appearance: 'success',
@@ -78,9 +78,8 @@ function Signin(props) {
                   setState(initialState);
             
               
-                  localStorage.setItem("id", response.data.data._id);
+                  localStorage.setItem("id", response.data._id);
                   localStorage.setItem("loggedin", true);
-                      localStorage.setItem('token', response.data.token);
                       props.history.push("/dashboard");
 
                     
@@ -89,7 +88,7 @@ function Signin(props) {
                 },
               })
           }
-          else if (response.data.status === 400) {
+          else if (response.status && response.status===400) {
             addToast('User already exists', {
               appearance: 'error', autoDismiss: true,
               autoDismissTimeout: 2000,
@@ -114,7 +113,7 @@ function Signin(props) {
           <div className="top-C61RwL">
         
           </div>
-          <div className="content-signup">
+          <div className="content-signinup">
             <div className="textfields-signup">
             
               <div className="group">
@@ -183,4 +182,4 @@ function Signin(props) {
   );
 }
 
-export default withRouter(Signin);
+export default withRouter(Signup);

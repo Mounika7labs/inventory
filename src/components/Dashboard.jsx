@@ -1,7 +1,6 @@
 import React, { useState, useEffect, Fragment } from 'react';
 import { withRouter } from 'react-router-dom';
 import Grid from '@material-ui/core/Grid'
-import axios from 'axios';
 import { useToasts } from 'react-toast-notifications';
 import {
   Card, Button, Table, FormGroup, Label, Input
@@ -194,7 +193,7 @@ await dbHelper.default.addBin(formbody)
   }
 
   return (
-    <div className="doctortimeslot-container">
+    <div className="dashboard-container">
       <div className="top-header">Bins</div>
       <div className="tabs-container">
 
@@ -225,12 +224,12 @@ await dbHelper.default.addBin(formbody)
                         value={searchValue}
                         onChange={(e) => updateSearch(e)}
                         placeholder="Search"
-                        className="patient_searchcontainer"
+                        className="bin_searchcontainer"
 
                       /> : ""}
                     </div>
                     {showBin ?
-                      <div className="content-profilesettings">
+                      <div className="content-form">
                         <Fragment>
                           <div className="group">
                             <FormGroup>
@@ -287,9 +286,9 @@ await dbHelper.default.addBin(formbody)
 
                     <div class="textfields-signup">
                       <div >
-                        <Table striped className="educationtable-container" size="sm">
+                        <Table striped className="bintable-container" size="sm">
                           <thead>
-                            <tr className="education-row">
+                            <tr className="bin-row">
                               <th style={{ width: "10%" }}>Name</th>
                               <th style={{ width: "40%" }}>Note</th>
                               <th style={{ width: "15%" }}>Items</th>
@@ -304,7 +303,7 @@ await dbHelper.default.addBin(formbody)
                                 bins.nodata === undefined && bins.length !== 0 && bins.map(
                                   (bin, key) => {
                                     return (
-                                      <tr key={key} className="education-row" onClick={() => handleBin(bin._id, bin.name)}>
+                                      <tr key={key} className="bin-row" onClick={() => handleBin(bin._id, bin.name)}>
                                         <td>{bin.name} </td>
                                         <td>{bin.note} </td>
                                         <td>{bin.itemscount}</td>

@@ -1,3 +1,18 @@
+.dashboard-container .top-container {
+    position: fixed;
+    right: 16px;
+    top: 15px;
+    width: 46px;
+  }
+  .arrow-image {
+    width: 18px;
+    height: 21px;
+    cursor: pointer;
+  }
+
+  .bin-filternone{
+      display: none;
+  }
 .item-button{
     width: 25px;
 }
@@ -9,3 +24,26 @@
     margin-right: 4px;
     height: 27px
 }
+.item-delete {
+    width: 23px;
+    height: 23px;
+  }
+  
+  .modal {
+    display: flex !important;
+    align-items: center !important;
+  }
+  .modal-dialog {
+    width: 100% !important;
+    margin: 1.5rem !important;
+    
+  }
+  .modal-content {
+    /* font-family: 'Mada', 'Almarai','Cairo','Reem Kufi' !important; */
+    font-family: 'Almarai' !important;
+  }
+  
+  .close {
+    border: none !important;
+  }
+  

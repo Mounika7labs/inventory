@@ -1,24 +1,103 @@
 import PouchDB from 'pouchdb';
 import PouchDBFind from 'pouchdb-find';
+import bcrypt from 'bcryptjs';
 PouchDB.plugin(PouchDBFind);
+
 const localDB = new PouchDB(process.env.REACT_APP_COUCH_DATABASE);
-const remoteDB = new PouchDB(`${process.env.REACT_APP_COUCH_URL}/${process.env.REACT_APP_COUCH_DATABASE}`,{
+const remoteDB = new PouchDB(`${process.env.REACT_APP_COUCH_URL}/${process.env.REACT_APP_COUCH_DATABASE}`, {
   auth: {
-      username: process.env.REACT_APP_COUCH_USERNAME,
-      password: process.env.REACT_APP_COUCH_PASSWORD
-    }
+    username: process.env.REACT_APP_COUCH_USERNAME,
+    password: process.env.REACT_APP_COUCH_PASSWORD
+  }
 });
-        localDB.sync(remoteDB, function(err, response) {
-   if (err) {
-      return console.log(err);
-   } else {
-      console.log(response,"add bin sync");
-   }
-  });
+localDB.sync(remoteDB, function (err, response) {
+  if (err) {
+    return console.log("err");
+  } else {
+    // console.log(response, "add bin sync");
+  }
+});
 
 const dbHelpers = {
   localDB: localDB,
   remoteDB: remoteDB,
+  login: async function (doc) {
+
+    return new Promise(resolve => {
+      localDB.find({
+        selector: {
+          email: doc.email
+        },
+
+      }).then((result) => {
+        if (result.docs.length !== 0) {
+          bcrypt.compare(doc.password, result.docs[0].password)
+
+            .then(isVerified => {
+              if (isVerified) {
+                resolve({
+                  status: 200,
+                  data: result.docs[0]
+                })
+
+              }
+              else {
+                resolve({ status: 401 })
+              }
+            })
+
+        }
+        else {
+          resolve({ status: 400 })
+        }
+      })
+        .catch(err => {
+          console.log(err);
+        })
+    });
+  },
+  register: async function (doc) {
+
+    return new Promise(resolve => {
+      localDB.find({
+        selector: {
+          email: doc.email
+        },
+
+      }).then((result) => {
+        if (result.docs.length !== 0) {
+          resolve({ status: 400 })
+
+        }
+        else {
+          bcrypt.hash(doc.password, 10, (err, hash) => {
+            if (err) throw err;
+            doc.password = hash;
+            localDB.post(doc).then(result => {
+              localDB.find({
+                selector: {
+                  _id: result.id,
+                },
+
+              })
+                .then((userdata) => {
+                  resolve({
+                    status: 200,
+                    data: userdata.docs[0]
+                  })
+
+                }
+                )
+            })
+          })
+        }
+      })
+        .catch(err => {
+          console.log(err);
+        })
+    });
+  },
+
 
   getBins: function () {
 
@@ -32,165 +111,164 @@ const dbHelpers = {
       });
       localDB.find({
         selector: {
-            tableName:"bins",
-            createdDate:{$exists:true}
+          tableName: "bins",
+          createdDate: { $exists: true }
         },
-        sort: [{"createdDate": "desc"}],
-     
-      }).then((result) =>{
-        if(result.docs.length!==0){
-          result.docs.map((data,i)=>{
+        sort: [{ "createdDate": "desc" }],
+
+      }).then((result) => {
+        if (result.docs.length !== 0) {
+          result.docs.map((data, i) => {
             localDB.find({
               selector: {
-                  binid:data._id,
-                  tableName:"binitems"
+                binid: data._id,
+                tableName: "binitems"
               },
-              fields:[
+              fields: [
                 "binid",
                 "quantity"
               ]
-           
-            }).then((items) =>{
-              var quantity = items.docs.reduce((accum,item) => accum + item.quantity, 0)
-          
-               result.docs[i]['itemscount'] = items.docs.length;
-               result.docs[i]['totalquantity'] = quantity;
-               if(i + 1 === result.docs.length){ 
 
-                      localDB.sync(remoteDB, function(err, response) {
-   if (err) {
-      return console.log(err);
-   } else {
-      console.log(response,"get bin sync");
-   }
-  });
-                      resolve( {
-                  status:200,
-                  rows:result.docs
-                } );
-    
+            }).then((items) => {
+              var quantity = items.docs.reduce((accum, item) => accum + item.quantity, 0)
+
+              result.docs[i]['itemscount'] = items.docs.length;
+              result.docs[i]['totalquantity'] = quantity;
+              if (i + 1 === result.docs.length) {
+
+                localDB.sync(remoteDB, function (err, response) {
+                  if (err) {
+                    return console.log("err");
+                  } else {
+                    // console.log(response, "get bin sync");
+                  }
+                });
+                resolve({
+                  status: 200,
+                  rows: result.docs
+                });
+
               }
-          
+
             }
             )
-          
-          
+
+
           })
         }
-        else{
-                  localDB.sync(remoteDB, function(err, response) {
-   if (err) {
-      return console.log(err);
-   } else {
-      console.log(response,"add bin sync");
-   }
-  });
-            resolve({
-              status:400,
-              rows:[]
-            })
-      }
-        })
-          .catch(err=>{
-            console.log(err);
-          })
-    });
-  },
-
-
-
-  addBin:async function (doc) {
-
-    return new Promise(resolve => {
-      localDB.find({
-        selector: {
-          name:doc.name,
-            tableName:"bins"
-        },
-     
-      }).then((result) =>{
-        if(result.docs.length!==0){
-                  localDB.sync(remoteDB, function(err, response) {
-   if (err) {
-      return console.log(err);
-   } else {
-      console.log(response,"add bin sync");
-   }
-  });
-          resolve({status:400})
-        }
-        else{
-          localDB.post(doc, function(err, response) {
-            console.log(err,response);
-       if (err) {
-         return console.log(err);
-       } else {
-         if(response.ok){
-          console.log(response,"res");
-
-          localDB.sync(remoteDB, function(err, response) {
+        else {
+          localDB.sync(remoteDB, function (err, response) {
             if (err) {
-               return console.log(err);
+              return console.log("err");
             } else {
-               console.log(response,"add bin sync");
+              // console.log(response, "add bin sync");
             }
-           });
-          resolve({status:200})
-         }
- 
- 
-   
-      
-       }
-        })
-      }
-        })
-          .catch(err=>{
-            console.log(err);
+          });
+          resolve({
+            status: 400,
+            rows: []
           })
+        }
+      })
+        .catch(err => {
+          console.log(err);
+        })
     });
   },
-  addBinItem:async function (doc) {
+
+
+
+  addBin: async function (doc) {
 
     return new Promise(resolve => {
       localDB.find({
         selector: {
-          name:doc.name,
-          tableName:"items"
+          name: doc.name,
+          tableName: "bins"
         },
-     
-      }).then((result) =>{
-        if(result.docs.length!==0){
-                  localDB.sync(remoteDB, function(err, response) {
-   if (err) {
-      return console.log(err);
-   } else {
-      console.log(response,"add bin sync");
-   }
-  });
-          resolve({status:400})
+
+      }).then((result) => {
+        if (result.docs.length !== 0) {
+          localDB.sync(remoteDB, function (err, response) {
+            if (err) {
+              return console.log("err");
+            } else {
+              // console.log(response, "add bin sync");
+            }
+          });
+          resolve({ status: 400 })
         }
-        else{
-          localDB.post(doc, function(err, response) {
-            console.log(err,response);
-       if (err) {
-         return console.log(err);
-       } else {
-                localDB.sync(remoteDB, function(err, response) {
-   if (err) {
-      return console.log(err);
-   } else {
-      console.log(response,"add bin sync");
-   }
-  });
-        resolve({status:200})
-       }
-        })
-      }
-        })
-          .catch(err=>{
-            console.log(err);
+        else {
+          localDB.post(doc, function (err, response) {
+            console.log(err, response);
+            if (err) {
+              return console.log("err");
+            } else {
+              if (response.ok) {
+                console.log(response, "res");
+
+                localDB.sync(remoteDB, function (err, response) {
+                  if (err) {
+                    return console.log(err);
+                  } else {
+                    // console.log(response, "add bin sync");
+                  }
+                });
+                resolve({ status: 200 })
+              }
+
+
+
+
+            }
           })
+        }
+      })
+        .catch(err => {
+          console.log(err);
+        })
+    });
+  },
+  addBinItem: async function (doc) {
+
+    return new Promise(resolve => {
+      localDB.find({
+        selector: {
+          name: doc.name,
+          tableName: "items"
+        },
+
+      }).then((result) => {
+        if (result.docs.length !== 0) {
+          localDB.sync(remoteDB, function (err, response) {
+            if (err) {
+              return console.log("err");
+            } else {
+              // console.log(response, "add bin sync");
+            }
+          });
+          resolve({ status: 400 })
+        }
+        else {
+          localDB.post(doc, function (err, response) {
+            if (err) {
+              return console.log(err);
+            } else {
+              localDB.sync(remoteDB, function (err, response) {
+                if (err) {
+                  return console.log("err");
+                } else {
+                  // console.log(response, "add bin sync");
+                }
+              });
+              resolve({ status: 200 })
+            }
+          })
+        }
+      })
+        .catch(err => {
+          console.log(err);
+        })
     });
   },
 
@@ -206,133 +284,133 @@ const dbHelpers = {
       });
       localDB.find({
         selector: {
-          binid:doc.binid,
-            tableName:"binitems",
-            createdDate:{$exists:true}
+          binid: doc.binid,
+          tableName: "binitems",
+          createdDate: { $exists: true }
         },
-        sort: [{"createdDate": "desc"}],
-     
-      }).then((result) =>{
-        if(result.docs.length!==0){
-                  localDB.sync(remoteDB, function(err, response) {
-   if (err) {
-      return console.log(err);
-   } else {
-      console.log(response,"add bin sync");
-   }
-  });
-          resolve( {
-            status:200,
-            rows:result.docs
-          } );
+        sort: [{ "createdDate": "desc" }],
+
+      }).then((result) => {
+        if (result.docs.length !== 0) {
+          localDB.sync(remoteDB, function (err, response) {
+            if (err) {
+              return console.log("err");
+            } else {
+              // console.log(response, "add bin sync");
+            }
+          });
+          resolve({
+            status: 200,
+            rows: result.docs
+          });
         }
-        else{
-                  localDB.sync(remoteDB, function(err, response) {
-   if (err) {
-      return console.log(err);
-   } else {
-      console.log(response,"add bin sync");
-   }
-  });
-            resolve({
-              status:400,
-              rows:[]
-            })
-      }
-        })
-          .catch(err=>{
-            console.log(err);
+        else {
+          localDB.sync(remoteDB, function (err, response) {
+            if (err) {
+              return console.log("err");
+            } else {
+              // console.log(response, "add bin sync");
+            }
+          });
+          resolve({
+            status: 400,
+            rows: []
           })
+        }
+      })
+        .catch(err => {
+          console.log(err);
+        })
     });
   },
-  updateBinItem:async function (doc) {
+  updateBinItem: async function (doc) {
 
     return new Promise(resolve => {
       localDB.find({
         selector: {
           _id: doc.id,
-          tableName:"binitems"
+          tableName: "binitems"
         },
-     
-      }).then((result) =>{
-        if(result.docs.length!==0){
+
+      }).then((result) => {
+        if (result.docs.length !== 0) {
           result.docs[0]['quantity'] = doc.quantity;
 
           localDB.put(result.docs[0], (err, data) => {
             if (err) {
-            return console.log(err,"error");
+              return console.log(err, "error");
             } else {
-                      localDB.sync(remoteDB, function(err, response) {
-   if (err) {
-      return console.log(err);
-   } else {
-      console.log(response,"add bin sync");
-   }
-  });
-              resolve({status:200})
+              localDB.sync(remoteDB, function (err, response) {
+                if (err) {
+                  return console.log("err");
+                } else {
+                  // console.log(response, "add bin sync");
+                }
+              });
+              resolve({ status: 200 })
 
-            }  
-            })
-        }
-        else{
-                  localDB.sync(remoteDB, function(err, response) {
-   if (err) {
-      return console.log(err);
-   } else {
-      console.log(response,"add bin sync");
-   }
-  });
-        resolve({status:400})
-     
-      }
-        })
-          .catch(err=>{
-            console.log(err);
+            }
           })
+        }
+        else {
+          localDB.sync(remoteDB, function (err, response) {
+            if (err) {
+              return console.log("err");
+            } else {
+              // console.log(response, "add bin sync");
+            }
+          });
+          resolve({ status: 400 })
+
+        }
+      })
+        .catch(err => {
+          console.log(err);
+        })
     });
   },
-  deleteBinItem:async function (doc) {
+  deleteBinItem: async function (doc) {
 
     return new Promise(resolve => {
       localDB.find({
         selector: {
           _id: doc.id,
-          tableName:"binitems"
+          tableName: "binitems"
         },
-     
-      }).then((result) =>{
-        if(result.docs.length!==0){
-          localDB.remove(doc.id,result.docs[0]._rev, (err, data) => {
-            if(!err){
-                      localDB.sync(remoteDB, function(err, response) {
-   if (err) {
-      return console.log(err);
-   } else {
-      console.log(response,"add bin sync");
-   }
-  });
-              resolve({status:200})
+
+      }).then((result) => {
+        if (result.docs.length !== 0) {
+          localDB.remove(doc.id, result.docs[0]._rev, (err, data) => {
+            if (!err) {
+              localDB.sync(remoteDB, function (err, response) {
+                if (err) {
+                  return console.log("err");
+                } else {
+                  // console.log(response, "add bin sync");
+                }
+              });
+              resolve({ status: 200 })
             }
-            else{
+            else {
               console.log(err);
             }
-        })  
-        }
-        else{
-                  localDB.sync(remoteDB, function(err, response) {
-   if (err) {
-      return console.log(err);
-   } else {
-      console.log(response,"add bin sync");
-   }
-  });
-        resolve({status:400})
-     
-      }
-        })
-          .catch(err=>{
-            console.log(err);
           })
+        }
+        else {
+          localDB.sync(remoteDB, function (err, response) {
+            if (err) {
+              return console.log("err");
+            } else {
+              // console.log(response, "add bin sync");
+            }
+          });
+          resolve({ status: 400 })
+
+        }
+      })
+        .catch(err => {
+          console.log(err);
+        })
     });
   },
 
@@ -340,7 +418,7 @@ const dbHelpers = {
 
 
 
-  
+
 };
 
 export default dbHelpers;

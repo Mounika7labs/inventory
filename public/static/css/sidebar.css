@@ -103,57 +103,24 @@ a { border:0  !important; outline: none !important; }
   margin: auto;
 }
 
-.where-to{
-  position: fixed;
-    top: 12px;
-    left: 55px;
-    color: #78849E ;
-    /* font-family: 'Mada', 'Almarai','Cairo','Reem Kufi' !important; */
-    font-family: 'Almarai' !important;
-
-    font-size: 1rem;
-    font-style: normal;
-    font-weight: 600;
-    z-index: 1;
-}
-
 .snavbar {
-  /* width: 100%;
-  padding: 10px;
-  position: fixed;
-  top: 0; */
   transition: top 0.6s;
 }
 
 .snavbarh {
-  /* top: -80px; */
   display: none;
 }
 
-.menu-imagefile-container{
-  width: 21px;
-  height: 21px;
-}
 
-.menu-imagedonations-container{
-  width: 23px;
-  height: 23px;
-}
 
 .menu-home-container{
   width: 24px;
   height: 24px;
 }
-.menu-patient-container{
-  width: 29px;
-  height: 29px;
-}
-.menu-patientinfo-container{
-  width: 25px;
-  height: 25px;
+
+
+.menu-logout-container{
+  width: 22px;
+  height: 22px;
 }
 
-.menu-setting-container{
-  width: 24px;
-  height: 24px;
-}

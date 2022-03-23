@@ -7,8 +7,8 @@ import {
 import React, { useEffect,useState } from 'react'
 import { withRouter } from "react-router-dom";
 import { useToasts } from 'react-toast-notifications';
+const dbHelper = require('../util/dbHelper');
 
-import axios from 'axios';
 
 
 const initialLoginState = {
@@ -60,25 +60,24 @@ function Signin(props) {
 
   //Function to sign in user
 
-  const signin = () => {
-    let input = {};
-
-
+  const signin = async() => {
   
-      input = {
+
+
+
+    
+    const isValid = validateLogin();
+    if (isValid) {
+        
+      let formbody = {
         email: loginState.email,
         password: loginState.password
       }
-    
-    const isValid = validateLogin();
-    let url = process.env.REACT_APP_API_URL + '/api/login'
-      //  let url =  '/api/login'
-       console.log(url);
-    if (isValid) {
-      axios.post(url, input
-      )
+
+  
+      await dbHelper.default.login(formbody)
         .then(function (response) {
-          if (response.data.status === 200) {
+          if(response.status && response.status===200){
 
             addToast('User Loggedin Successfully', {
               appearance: 'success',
@@ -87,8 +86,7 @@ function Signin(props) {
               onDismiss: () => {
                 setLoginState(initialLoginState);
                 localStorage.setItem("loggedin", true);
-                localStorage.setItem('token', response.data.token);
-                localStorage.setItem("id", response.data.data._id);
+                localStorage.setItem("id", response.data._id);
                 props.history.push("/dashboard");
 
               }
@@ -97,13 +95,13 @@ function Signin(props) {
          
 
           }
-          else if (response.data.status === 400) {
+          else if(response.status && response.status===400){
             addToast('User does not exists', {
               appearance: 'error', autoDismiss: true,
               autoDismissTimeout: 2000,
             });
           }
-          else if (response.data.status === 401) {
+          else if(response.status && response.status===401){
             addToast('Password is incorrect', {
               appearance: 'error', autoDismiss: true,
               autoDismissTimeout: 2000,
@@ -128,7 +126,7 @@ function Signin(props) {
 
 
 
-      <div className="content-signin">
+      <div className="content-signinup">
             <div className="textfields-signin">
             
                 <div className="group">

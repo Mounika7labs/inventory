@@ -1,58 +1,9 @@
 /* screen - sign-up-dark */
 
-.sign-up-dark {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  text-align: center;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-.sign-up-dark .top-C61RwL {
-  background-color: transparent;
-  left: 0px;
-  position: absolute;
-  top: 27px;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  color: white;
-}
-.sign-in-SJ3nmS{
-  background-color: transparent;
-  border-radius: 12px;
-  width: 73px;
-  height: 32px;
-  text-align: center;
-  padding: 8.5px;
-  font-size: 0.75rem;
-  font-style: normal;
-  font-weight: 600;
-  cursor: pointer;
-  margin-right: 10px;
-}
-.sign-up-SJ3nmS{
-  background-color: transparent;
-  border-radius: 12px;
-  width: 73px;
-  height: 32px;
-  text-align: center;
-  padding: 8.5px;
-  font-size: 0.75rem;
-  font-style: normal;
-  font-weight: 600;
-  cursor: pointer;
-  margin-left: 30px;
 
-}
-.content-signup {
-  background-color: transparent;
-  position: absolute;
-  top: 100px;
-}
-.content-signin {
+
+
+.content-signinup {
   background-color: transparent;
   position: absolute;
   top: 100px;

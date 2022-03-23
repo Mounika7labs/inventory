@@ -1,5 +1,5 @@
 import React  from "react";
-import { Signup, Splash} from "./components";
+import { Signup, Signin} from "./components";
 import { BrowserRouter as Router, Route,Switch} from 'react-router-dom';
 import { ToastProvider } from 'react-toast-notifications';
 import Routes from './Routes'
@@ -14,7 +14,7 @@ function App() {
        <Switch>
         <div>
         <ToastProvider>
-          <Route exact path="/" render={()=>localStorage.getItem("loggedin")? "":<Splash />}/>
+          <Route exact path="/" render={()=>localStorage.getItem("loggedin")? "":<Signin />}/>
           <Route exact path="/signup" render={()=><Signup />}/>
           <Route path="/" render={(props)=><Routes {...props}/>}/>
           </ToastProvider>

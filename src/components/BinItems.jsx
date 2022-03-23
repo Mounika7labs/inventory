@@ -127,7 +127,7 @@ function BinItems(props) {
         }
         
       })
-      .catch(err => { console.log(err, "get details error") })
+      .catch(err => { console.log("get details error") })
 
   }
   useEffect(() => {
@@ -177,7 +177,7 @@ const addbinitem = async()=>{
           });
         }
       })
-      .catch(err => { console.log(err) })
+      .catch(err => { console.log("err") })
   }
 
 }
@@ -313,8 +313,8 @@ const updateItem = async(id,quantity) =>{
 
 
   return (
-    <div className="doctortimeslot-container">
-      <div className={pstate.visible === true ? "top-container" : "doctor-filternone"}>
+    <div className="dashboard-container">
+      <div className={pstate.visible === true ? "top-container" : "bin-filternone"}>
         <img src="/static/img/arrow.svg" alt="back" className="arrow-image" onClick={handleNavigation} />
       </div>
       <div className="top-header">{localStorage.getItem("binname")}</div>
@@ -347,12 +347,12 @@ const updateItem = async(id,quantity) =>{
                 value={searchValue}
                 onChange={(e) => updateSearch(e)}
                 placeholder="Search"
-                className="patient_searchcontainer"
+                className="bin_searchcontainer"
 
               /> : ""}
               </div>
                       {showBinItem ?
-                       <div className="content-profilesettings">
+                       <div className="content-form">
                         <Fragment>
                          <div className="group">
                         <FormGroup>
@@ -409,9 +409,9 @@ const updateItem = async(id,quantity) =>{
 
                       <div class="textfields-signup">
                         <div >
-                          <Table striped className="educationtable-container" size="sm">
+                          <Table striped className="bintable-container" size="sm">
                             <thead>
-                              <tr className="education-row">
+                              <tr className="bin-row">
                                 <th style={{ width: "10%" }}>Name</th>
                                 <th style={{ width: "15%" }}>Quantity</th>
                                 <th style={{ width: "15%" }}>Add/Remove</th>
@@ -426,11 +426,11 @@ const updateItem = async(id,quantity) =>{
                                 binitems.nodata===undefined&& binitems.length !== 0 &&binitems.map(
                                     (binitem, key) => {
                                       return (
-                                        <tr key={key} className="education-row">
+                                        <tr key={key} className="bin-row">
                                           <td>{binitem.name} </td>
                                           <td>{binitem.quantity} </td>
                                           <td><button className="item-button" onClick={()=>removeItem(binitem._id,binitem.items,binitem.quantity)}>-</button> <input type="text" value={binitem.items} onChange={(e)=>handleItemcount(e,binitem._id)}  className="item-input" /><button className="item-button" onClick={()=>addItem(binitem._id,binitem.items,binitem.quantity)}>+</button> </td>
-                                          <td >  <img onClick={() => toggleConfirmDeleteItem(binitem._id,binitem._rev)} src="/static/img/delete.svg" alt="save" className="education-edit" /></td>
+                                          <td >  <img onClick={() => toggleConfirmDeleteItem(binitem._id,binitem._rev)} src="/static/img/delete.svg" alt="delete" className="item-delete" /></td>
                                   
 
                                       

@@ -53,11 +53,10 @@ const Sidebar = (props) => {
 
   return (
     <div style={{ direction: "ltr" }} className={state.visible === true ? "snavbar" : "snavbarh"}  >
-      {/* <p className="where-to">{props.label.search_whereto}</p> */}
      <Menu>
-          <a id="home" className="menu-item" href="#/"><div className="userimage-container"> <img src={process.env.REACT_APP_URL + "img/users/user.png"} alt="profilepic"/></div></a>
+          <a id="home" className="menu-item" href="#/"><div className="userimage-container"> <img src={"/static/img/users/user.png"} alt="profilepic"/></div></a>
           <a id="home" className="menu-item" href="#/" onClick={() => handleSearch()}><img src="/static/img/home.svg" alt="home" className="menu-home-container" /></a>
-          <a className="menu-item" href="#/"><img src="/static/img/logout.svg" alt="logout" onClick={logout} className="menu-image-container" /></a>
+          <a className="menu-item" href="#/"><img src="/static/img/logout.svg" alt="logout" onClick={logout} className="menu-logout-container" /></a>
         </Menu>
 
     </div>

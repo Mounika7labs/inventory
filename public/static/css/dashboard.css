@@ -1,254 +1,31 @@
 .dashboard-container{
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    overflow-y: visible;
-    overflow-x: visible;
-    font-family: 'Almarai' !important;
-}
-
-.dashboard-container .user-details{
-  position: absolute;
-  top: 325px;
-  width: 93% !important;
-}
-
-.covidstatus-label{
-  font-weight: bold;
-  font-size: 13px;
-
-}
-
-.dashboard-container  .user-card{
-  border-radius: 12px !important;
-  height:auto !important;
-  width: 100% !important;
-  text-align: left  !important;
-    border:none !important;
-    background-color: #FFFFFF !important;
-    min-height: 220px !important;
-  }
-
-  .dashboard-container  .auser-card{
-    border-radius: 12px !important;
-    height:auto !important;
-    width: 100% !important;
-    text-align: right  !important;
-      border:none !important;
-      background-color: #FFFFFF !important;
-      min-height: 220px !important;
-    }
-  .dashboard-container .usercard-data{
-    margin: 6px !important;
-    font-size: 0.813rem;
-    font-style: normal;
-    color: #2A2E43;
-  }
-  .user-speciality{
-    font-weight: 600;
-    font-size: 14px;
-  }
-  .userdetails-card{
-    display: flex;
-  }
-  .userdetails-image-container {
-    width: 64px;
-    height: 64px;
-    border-radius: 12px;
-    display: flex;
-  }
-  
-  .userdetails-image-container  img{
-    width: 50px;
-    height: 50px;
-    margin: auto;
-  }
-
-
-  .card-body{
-    padding: 0px !important;
-  }
-
-  .user-break-line{
-      height: 3px !important;
-      color: #555869 !important;
-      width: 134px !important;
-      border-radius: 1px;
-      opacity: 0.5;
-      margin-top: 2px;
-      margin-bottom: 6px;
-  }
-.user-options-container{
+  position: relative;
   width: 100%;
-  height: auto;
+  height: 100vh;
+  text-align: center;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
+  font-family: 'Almarai' !important;
+}
+
+.top-header {
   position: absolute;
-  top: 575px;
-  font-size: 1.375rem;
-  font-style: normal;
-  color: #FFFFFF;
+  top: 45px;
+  font-style: normal !important;
+  font-size: 2.5rem !important;
   font-weight: 600;
-
+  color: #454F63;
 }
-
-.option-label{
-  font-size: 0.75rem;
-  opacity: 0.5;
-}
-.option-break-line {
-  height: 5vh !important;
-  width: 1px !important;
-  color: #FFFFFF !important;
-  opacity: 0.1 !important;
-  margin: 0px !important;
-  margin-top: 4px !important;
-}
-
-
-.user-features-container{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+.tabs-container {
+  flex-grow: 1;
   position: absolute;
-  top: 641px;
-  width: 100%;
-
-}
-.container{
-  margin-bottom: 60px !important;
-}
-
-.card-group{
-  display: flex !important;
-    flex-direction: row !important;
-    width: 100% !important;
-
-
-}
-
-.user-features-container .card{
-  width: 125px !important;
-  height: 125px !important;
-}
-
-.col-4{
-  height: 125px !important;
-  display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #FFFFFF !important;
-    font-size: 0.875rem;
-    font-style: normal;
-
-}
-
-.userchat-card{
-  background: #3497FD 0% 0% no-repeat padding-box !important;
-  border: 1px solid #3497FD !important;
-  cursor: pointer;
-  
-}
-
-.userbooking-card{
- background: #5773FF 0% 0% no-repeat padding-box !important;
- cursor: pointer;
-
-}
-.userpayments-card{
-  background: #665EFF 0% 0% no-repeat padding-box!important;
-  cursor: pointer;
-
-}
-.userprofile-card{
-  background: #3497fdf0 0% 0% no-repeat padding-box !important;
-  cursor: pointer;
-
-}
-
-.useraccount-card{
-  background: #5773fff0 0% 0% no-repeat padding-box !important;
-  cursor: pointer;
-
-}
-.userlogin-card{
-  background: #665efff0 0% 0% no-repeat padding-box!important;
-  cursor: pointer;
-
-}
-
-.chat-image-container img{
-  width: 24px;
-  height: 24px;
-  margin-bottom: 10px;
-}
-
-.row-col-container {
-  max-width: 100% !important;
-}
-.dashboard-education{
-  font-weight: bold;
-    font-size: 14px;
-}
-
-.dashboard-institute{
-  font-weight: bold;
-    font-size: 13px;
-}
-
-@media screen and (min-width: 700px) and (max-width:1019px) {
-  .dashboard-container .user-details{
-    top: 380px !important
-  }
-  .user-options-container{
-    top: 606px !important;
-  }
-  .user-features-container{
-    top: 676px !important;
-  }
-}
-
-
-@media screen and (min-width: 1020px) {
-  .dashboard-container .user-details{
-    top: 500px !important
-  }
-  .user-options-container{
-    top: 737px !important;
-  }
-  .user-features-container{
-    top: 832px !important;
-  }
-}
-
-.services-container{
+  top: 115px;
   width: 100% !important;
-  direction: rtl !important;
+  overflow-x: hidden;
+  overflow-y: visible;
+  bottom: 40px;
 }
-
-
-.addbin-button{
-  display: block !important;
-    background-color: var(--blueberry) !important;
-    border-color: var(--blueberry) !important;
-    border-radius: 12px !important;
-    width: 97% !important;
-    height: 52px !important;
-    color: var(--white) !important;
-    font-size: 0.938rem !important;
-    font-style: normal !important;
-    font-weight: 600 !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
-    margin-top: 58px !important;
-    margin-bottom: 10px !important;
-}
-
 .bin-containercard {
   border-radius: 12px !important;
   box-shadow: 0px 4px 16px #455b6314 !important;
@@ -264,6 +41,13 @@
   padding: 16px;
   /* font-family: 'Mada', 'Almarai','Cairo','Reem Kufi' !important; */
   font-family: 'Almarai' !important;
+}
+
+.search-paginationcontainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 16px;
 }
 
 .useraddbin-button {
@@ -284,13 +68,110 @@
   margin-bottom: 17px;
 }
 
-
-.content-bincontainer{
-  margin-left: auto;
-    margin-right: auto;
-    margin-top: 5px;
-    margin-bottom: 34px;
-    width: 100% !important;
-    /* font-family: 'Mada', 'Almarai','Cairo','Reem Kufi' !important; */
-    font-family: 'Almarai' !important;
+.bin_searchcontainer {
+  height: 41px !important;
+  width: 44% !important;
+  background-color: var(--fiord) !important;
+  border-color: var(--fiord) !important;
+  color: var(--manatee) !important;
+  border-radius: 12px !important;
+  box-shadow: 0px 3px 15px #0000001f !important;
+  /* font-family: 'Mada', 'Almarai','Cairo','Reem Kufi' !important; */
+  font-family: 'Almarai' !important;
+  font-size: 0.938rem !important;
+  font-style: normal !important;
+  font-weight: 600 !important;
+  opacity: 1 !important;
 }
+.content-form {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5px;
+  margin-bottom: 34px;
+  width: 100%;
+  /* font-family: 'Mada', 'Almarai','Cairo','Reem Kufi' !important; */
+  font-family: 'Almarai' !important;
+}
+.addbin-button{
+  display: block !important;
+    background-color: var(--blueberry) !important;
+    border-color: var(--blueberry) !important;
+    border-radius: 12px !important;
+    width: 97% !important;
+    height: 52px !important;
+    color: var(--white) !important;
+    font-size: 0.938rem !important;
+    font-style: normal !important;
+    font-weight: 600 !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin-top: 58px !important;
+    margin-bottom: 10px !important;
+}
+
+.bintable-container {
+  color: var(--fiord) !important;
+}
+
+.bin-row td, th {
+  color: var(--manatee) !important;
+  padding-right: 8px !important;
+}
+
+
+
+.row-col-container {
+  max-width: 100% !important;
+}
+
+
+
+
+
+.MuiGrid-container {
+  margin-bottom: 70px !important;
+}
+.MuiGrid-grid-xs-12 {
+  padding: 12px !important;
+}
+
+
+thead {
+  height: 54px !important;
+  background-color: var(--fiord) !important;
+  color: #fff !important;
+  line-height: 54px !important;
+}
+
+
+
+
+.alllabel {
+  color: var(--manatee) !important;
+  font-size: 0.938rem !important;
+  font-style: normal !important;
+  font-weight: 600 !important;
+  margin-bottom: 10px;
+  display: flex !important;
+  margin-right: 10px !important;
+  margin-left: 10px !important;
+}
+
+.content-form .form-control, .timeslotform .form-control {
+  height: 52px !important;
+  width: 97% !important;
+  background-color: var(--fiord) !important;
+  border-color: var(--fiord) !important;
+  color: var(--manatee) !important;
+  border-radius: 12px !important;
+  box-shadow: 0px 3px 15px #0000001f !important;
+  font-size: 0.938rem !important;
+  font-style: normal !important;
+  font-weight: 600 !important;
+  opacity: 1 !important;
+  margin-left: auto;
+  margin-right: auto;
+  /* font-family: 'Mada', 'Almarai','Cairo','Reem Kufi' !important; */
+  font-family: 'Almarai' !important;
+}
+
