@@ -2,8 +2,13 @@ let cacheData = "appV1";
 
 var resourcesToCache = [
     '/',
+    '/static/js/main.chunk.js',
+    '/static/js/bundle.js',
     '/index.html',
+    '/static/js/vendors~main.chunk.js',
+    '/static/js/jquery.slim.min.js',
     '/favicon.ico',
+    '/manifest.json',
     '/logo192.png',
     '/logo144.png',
     '/logo512.png',
@@ -12,19 +17,13 @@ var resourcesToCache = [
     '/static/img/logout.svg',
     '/static/img/delete.svg',
     '/static/img/arrow.svg',
-    '/manifest.json',
-    '/static/css/splash.css',
+    '/static/css/signin.css',
     '/static/css/sign-up-dark.css',
     '/static/css/styleguide.css',
     '/static/css/globals.css',
      '/static/css/sidebar.css',
      '/static/css/dashboard.css',
-     '/static/css/binitems.css',
-    '/static/js/jquery.slim.min.js',
-    '/static/js/bundle.js',
-    '/static/js/main.chunk.js',
-    '/static/js/vendors~main.chunk.js',
-   
+     '/static/css/binitems.css'
 
 
 

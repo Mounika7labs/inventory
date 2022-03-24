@@ -39,4 +39,4 @@ navigator.serviceWorker.register(swUrl).then((response) =>{
   console.warn("response",response)
 })
 
-// reportWebVitals();
+reportWebVitals();
